@@ -3,6 +3,9 @@
 public class FollowThePath : MonoBehaviour {
 
     public Transform[] waypoints;
+    public AudioClip movementSound;
+
+    private AudioSource source;
 
     [SerializeField]
     private float moveSpeed = 1f;
@@ -14,6 +17,9 @@ public class FollowThePath : MonoBehaviour {
 
 	// Use this for initialization
 	private void Start () {
+        source = gameObject.AddComponent<AudioSource>();
+        source.clip = movementSound;
+        source.playOnAwake = false;
         transform.position = waypoints[waypointIndex].transform.position;
 	}
 	
@@ -34,6 +40,7 @@ public class FollowThePath : MonoBehaviour {
 
             if (transform.position == waypoints[waypointIndex].transform.position)
             {
+                source.PlayOneShot(movementSound);
                 waypointIndex += 1;
             }
         }

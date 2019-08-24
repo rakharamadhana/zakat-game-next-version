@@ -631,6 +631,7 @@ MonoBehaviour:
   - {fileID: 925646363}
   - {fileID: 456600285}
   - {fileID: 2019374842}
+  movementSound: {fileID: 8300000, guid: ec9b4fde9150a2d4ea3ff914912e40fa, type: 3}
   moveSpeed: 10
   waypointIndex: 0
   moveAllowed: 0
@@ -1130,6 +1131,7 @@ MonoBehaviour:
   - {fileID: 925646363}
   - {fileID: 456600285}
   - {fileID: 2019374842}
+  movementSound: {fileID: 8300000, guid: ec9b4fde9150a2d4ea3ff914912e40fa, type: 3}
   moveSpeed: 10
   waypointIndex: 0
   moveAllowed: 0
@@ -2065,7 +2067,7 @@ GameObject:
   - component: {fileID: 1454780631}
   - component: {fileID: 1454780630}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: BGM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2083,7 +2085,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ad62e5566c0cc444a8960e8edf5f3686, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
