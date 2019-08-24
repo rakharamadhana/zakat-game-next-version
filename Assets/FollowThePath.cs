@@ -43,6 +43,19 @@ public class FollowThePath : MonoBehaviour {
                 source.PlayOneShot(movementSound);
                 waypointIndex += 1;
             }
+
+            if (waypointIndex == 4)
+            {
+                Debug.Log(waypointIndex);
+                //Debug.Log("Step On 5");
+            }
+
+            if (transform.position == waypoints[9].transform.position)
+            {
+                Debug.Log(GameControl.diceSideThrown);
+                Debug.Log("Step On 10");
+            }
+
         }
     }
 }

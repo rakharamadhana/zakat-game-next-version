@@ -63,10 +63,20 @@ public class Dice : MonoBehaviour {
         } else if (whosTurn == 2)
         {
             GameControl.MovePlayer(2);
+            whosTurn = 3;
+
+        } else if (whosTurn == 3)
+        {
+            GameControl.MovePlayer(3);
+            whosTurn = 4;
+
+        } else if (whosTurn == 4)
+        {
+            GameControl.MovePlayer(4);
             whosTurn = 1;
 
         }
-        
+
         coroutineAllowed = true;
     }
 }
