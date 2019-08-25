@@ -14,6 +14,7 @@ public class FollowThePath : MonoBehaviour {
     public int waypointIndex = 0;
 
     public bool moveAllowed = false;
+    public bool moved = false;
 
 	// Use this for initialization
 	private void Start () {
@@ -26,13 +27,14 @@ public class FollowThePath : MonoBehaviour {
 	// Update is called once per frame
 	private void Update () {
         if (moveAllowed)
+        {
             Move();
+        }
 	}
 
     private void Move()
     {
         if (waypointIndex <= waypoints.Length - 1)
-            //Debug.Log(waypoints.Length);
         {
             transform.position = Vector2.MoveTowards(transform.position,
             waypoints[waypointIndex].transform.position,
@@ -44,18 +46,7 @@ public class FollowThePath : MonoBehaviour {
                 waypointIndex += 1;
             }
 
-            if (waypointIndex == 4)
-            {
-                Debug.Log(waypointIndex);
-                //Debug.Log("Step On 5");
-            }
-
-            if (transform.position == waypoints[9].transform.position)
-            {
-                Debug.Log(GameControl.diceSideThrown);
-                Debug.Log("Step On 10");
-            }
-
         }
+        
     }
 }
