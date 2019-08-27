@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class FollowThePath : MonoBehaviour {
 
-    public Transform[] waypoints;
-    public AudioClip movementSound;
+    //public Transform[] waypoints;
+    public List<GameObject> waypoints = new List<GameObject>();
 
-    private AudioSource source;
 
     [SerializeField]
     private float moveSpeed = 1f;
@@ -14,39 +15,47 @@ public class FollowThePath : MonoBehaviour {
     public int waypointIndex = 0;
 
     public bool moveAllowed = false;
-    public bool moved = false;
 
 	// Use this for initialization
 	private void Start () {
-        source = gameObject.AddComponent<AudioSource>();
-        source.clip = movementSound;
-        source.playOnAwake = false;
+        /* foreach(GameObject fooObj in GameObject.FindGameObjectsWithTag("WayPoint")){
+			waypoints.Add(fooObj);
+		}
+        waypoints.Reverse(); */
         transform.position = waypoints[waypointIndex].transform.position;
+
+       
 	}
 	
 	// Update is called once per frame
 	private void Update () {
-        if (moveAllowed)
-        {
+        
+        if (moveAllowed){
             Move();
         }
+        
 	}
 
     private void Move()
     {
-        if (waypointIndex <= waypoints.Length - 1)
+        
+        if (waypointIndex <= waypoints.Count - 1)
         {
+            //LadderCheck();
             transform.position = Vector2.MoveTowards(transform.position,
             waypoints[waypointIndex].transform.position,
             moveSpeed * Time.deltaTime);
 
             if (transform.position == waypoints[waypointIndex].transform.position)
             {
-                source.PlayOneShot(movementSound);
                 waypointIndex += 1;
             }
-
+            
         }
         
-    }
+
+       }
+
+        
 }
+
