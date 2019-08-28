@@ -22,6 +22,8 @@ public class GameControl : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
+
         diceSideThrown = 0;
         player1StartWaypoint = 0;
         player2StartWaypoint = 0;

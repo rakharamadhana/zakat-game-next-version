@@ -62,6 +62,11 @@ public class ButtonControl : MonoBehaviour
         SceneManager.LoadScene("MainScene");
     }
 
+    public void MenuBtn()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
     public void QuitBtn()
     {
         Application.Quit();
