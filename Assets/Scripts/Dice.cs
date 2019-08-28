@@ -26,6 +26,13 @@ public class Dice : MonoBehaviour
             GetComponent<AudioSource>().Play();
     }
 
+    public void RollDice()
+    {
+        if (!GameControl.gameOver && coroutineAllowed)
+            StartCoroutine("RollTheDice");
+        GetComponent<AudioSource>().Play();
+    }
+
     private IEnumerator RollTheDice()
     {
         coroutineAllowed = false;

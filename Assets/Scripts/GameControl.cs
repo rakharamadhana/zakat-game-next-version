@@ -2,8 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour {
+
+    public GameObject exitPanel;
+    public GameObject menuPanel;
 
     private static GameObject whoWinsTextShadow, player1MoveText, player2MoveText,player3MoveText, player4MoveText;
 
@@ -57,7 +61,14 @@ public class GameControl : MonoBehaviour {
     void Update()
     {
         if(gameOver){
-
+            if (SceneManager.GetActiveScene().name == "Menu")
+            {
+                exitPanel.SetActive(true);
+            }
+            else
+            {
+                menuPanel.SetActive(true);
+            }
         }
         if(Dice.whosTurn == 1){
             player1MoveText.gameObject.SetActive(true);
@@ -86,9 +97,9 @@ public class GameControl : MonoBehaviour {
         if (player2.GetComponent<FollowThePath>().waypointIndex >
             player2StartWaypoint + diceSideThrown)
         {
-            if(player2StartWaypoint+diceSideThrown == 3){
-                player2.GetComponent<FollowThePath>().transform.position = player2.GetComponent<FollowThePath>().waypoints[24].transform.position;
-                player2.GetComponent<FollowThePath>().waypointIndex = 24;
+            if(player2StartWaypoint+diceSideThrown == 6){
+                player2.GetComponent<FollowThePath>().transform.position = player2.GetComponent<FollowThePath>().waypoints[45].transform.position;
+                player2.GetComponent<FollowThePath>().waypointIndex = 45;
                 player2.GetComponent<FollowThePath>().waypointIndex +=1;
                 MovePlayer(2);
             }
@@ -160,9 +171,9 @@ public class GameControl : MonoBehaviour {
             player1StartWaypoint + diceSideThrown)
         {
             //Debug.Log(player1StartWaypoint+diceSideThrown);
-            if(player1StartWaypoint+diceSideThrown == 3){
-                player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[24].transform.position;
-                player1.GetComponent<FollowThePath>().waypointIndex = 24;
+            if(player1StartWaypoint+diceSideThrown == 6){
+                player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[45].transform.position;
+                player1.GetComponent<FollowThePath>().waypointIndex = 45;
                 player1.GetComponent<FollowThePath>().waypointIndex +=1;
                 MovePlayer(1);
             }
@@ -235,9 +246,9 @@ public class GameControl : MonoBehaviour {
             player3StartWaypoint + diceSideThrown)
         {
             //Debug.Log(player3StartWaypoint+diceSideThrown);
-            if(player3StartWaypoint+diceSideThrown == 3){
-                player3.GetComponent<FollowThePath>().transform.position = player3.GetComponent<FollowThePath>().waypoints[24].transform.position;
-                player3.GetComponent<FollowThePath>().waypointIndex = 24;
+            if(player3StartWaypoint+diceSideThrown == 6){
+                player3.GetComponent<FollowThePath>().transform.position = player3.GetComponent<FollowThePath>().waypoints[45].transform.position;
+                player3.GetComponent<FollowThePath>().waypointIndex = 45;
                 player3.GetComponent<FollowThePath>().waypointIndex +=1;
                 MovePlayer(3);
             }
@@ -310,9 +321,9 @@ public class GameControl : MonoBehaviour {
             player4StartWaypoint + diceSideThrown)
         {
             //Debug.Log(player4StartWaypoint+diceSideThrown);
-            if(player4StartWaypoint+diceSideThrown == 3){
-                player4.GetComponent<FollowThePath>().transform.position = player4.GetComponent<FollowThePath>().waypoints[24].transform.position;
-                player4.GetComponent<FollowThePath>().waypointIndex = 24;
+            if(player4StartWaypoint+diceSideThrown == 6){
+                player4.GetComponent<FollowThePath>().transform.position = player4.GetComponent<FollowThePath>().waypoints[45].transform.position;
+                player4.GetComponent<FollowThePath>().waypointIndex = 45;
                 player4.GetComponent<FollowThePath>().waypointIndex +=1;
                 MovePlayer(4);
             }

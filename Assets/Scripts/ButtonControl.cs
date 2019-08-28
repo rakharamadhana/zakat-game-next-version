@@ -40,6 +40,16 @@ public class ButtonControl : MonoBehaviour
             }
         }
     }
+
+    public void EscapeMenu(){
+        if (SceneManager.GetActiveScene().name == "Menu"){
+            exitPanel.SetActive(true);
+        }
+        else {
+            menuPanel.SetActive(true);
+        }
+    }
+
     public void CancelBtn(){
         menuPanel.SetActive(false);
         exitPanel.SetActive(false);
@@ -96,9 +106,18 @@ public class ButtonControl : MonoBehaviour
         SceneManager.LoadScene("MainScene");
     }
 
-    public void OpenUrl(){
+    public void OpenUrl()
+    {
         Application.OpenURL("https://github.com/rakharamadhana/zakat-game-next-version");
+    }
+    public void OpenZakatpedia()
+    {
+        Application.OpenURL("https://zakatpedia.com/");
+    }
 
+    public void OpenIZI()
+    {
+        Application.OpenURL("https://izi.or.id");
     }
 
 }
