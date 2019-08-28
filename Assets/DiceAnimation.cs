@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayAnimation : MonoBehaviour
+public class DiceAnimation : MonoBehaviour
 {
     Animator anim;
     GameObject player1, player2, player3, player4;
@@ -53,7 +53,7 @@ public class PlayAnimation : MonoBehaviour
         whosTurn = Dice.whosTurn;
         //Debug.Log(whosTurn);
         //Debug.Log(player);
-        if (whosTurn == player || isMoving)
+        if (!isMoving)
         {
             anim.enabled = true;
         }

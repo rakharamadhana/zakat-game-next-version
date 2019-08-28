@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1189,7 +1189,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 693, y: -312}
+  m_AnchoredPosition: {x: 702, y: -312}
   m_SizeDelta: {x: 131, y: 129}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &504577481
@@ -1386,12 +1386,12 @@ RectTransform:
   - {fileID: 854972387}
   - {fileID: 1345650320}
   m_Father: {fileID: 2124724366}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.5, y: -167.59998}
-  m_SizeDelta: {x: 843.4, y: 1056.8}
+  m_AnchoredPosition: {x: 1.5, y: -71.30005}
+  m_SizeDelta: {x: 1126.1, y: 1267.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &530457463
 GameObject:
@@ -1429,7 +1429,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -693, y: -312}
+  m_AnchoredPosition: {x: -711, y: -312}
   m_SizeDelta: {x: 131, y: 129}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &530457465
@@ -3523,12 +3523,12 @@ RectTransform:
   - {fileID: 1155853072}
   - {fileID: 93546634}
   m_Father: {fileID: 2124724366}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.5, y: -167.59998}
-  m_SizeDelta: {x: 843.4, y: 1056.8}
+  m_AnchoredPosition: {x: 4.5, y: -71.30005}
+  m_SizeDelta: {x: 1101.4, y: 1249.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1471841933
 GameObject:
@@ -3859,7 +3859,7 @@ GameObject:
   - component: {fileID: 1610839279}
   - component: {fileID: 1610839281}
   m_Layer: 5
-  m_Name: Image
+  m_Name: LogoIZI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3877,11 +3877,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2124724366}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 661, y: 318.7}
+  m_AnchoredPosition: {x: 684, y: 318.7}
   m_SizeDelta: {x: 278.7, y: 162.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1610839279
@@ -4482,16 +4482,16 @@ RectTransform:
   - {fileID: 504577480}
   - {fileID: 25033489}
   - {fileID: 530457464}
+  - {fileID: 1610839278}
   - {fileID: 1461887826}
   - {fileID: 510768757}
-  - {fileID: 1610839278}
   m_Father: {fileID: 543012492}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.0024414062}
-  m_SizeDelta: {x: 0, y: -0.0050049}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1735.6, y: 1225.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2124724367
 MonoBehaviour:

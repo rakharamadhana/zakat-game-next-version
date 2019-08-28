@@ -55,7 +55,6 @@ public class GameControl : MonoBehaviour {
         _animPlayer3 = GameObject.Find("Player3Sprite");
         _animPlayer4 = GameObject.Find("Player4Sprite");
 
-
         player1.GetComponent<FollowThePath>().moveAllowed = false;
         player2.GetComponent<FollowThePath>().moveAllowed = false;
         player3.GetComponent<FollowThePath>().moveAllowed = false;

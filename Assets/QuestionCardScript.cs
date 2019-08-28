@@ -30,9 +30,9 @@ public class QuestionCardScript : MonoBehaviour
     {
         coroutineAllowed = false;
         int randomCardSide = 0;
-        for (int i = 0; i <= 20; i++)
+        for (int i = 0; i <= 40; i++)
         {
-            randomCardSide = Random.Range(0, 6);
+            randomCardSide = Random.Range(0, 19);
             rend.sprite = cards[randomCardSide];
             yield return new WaitForSeconds(0.01f);
         }
