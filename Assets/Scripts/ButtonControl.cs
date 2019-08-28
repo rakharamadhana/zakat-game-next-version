@@ -16,19 +16,27 @@ public class ButtonControl : MonoBehaviour
         menuPanel.SetActive(false);
         exitPanel.SetActive(false);
 
-        playButton = GameObject.Find("Play");
+        if (SceneManager.GetActiveScene().name == "Menu")
+        {
+            playButton = GameObject.Find("Play");
 
-        player1 = GameObject.Find("1P");
-        player2 = GameObject.Find("2P");
-        player3 = GameObject.Find("3P");
-        player4 = GameObject.Find("4P");
+            playButton.SetActive(true);
 
-        playButton.SetActive(true);
+            player1 = GameObject.Find("1P");
+            player2 = GameObject.Find("2P");
+            player3 = GameObject.Find("3P");
+            player4 = GameObject.Find("4P");
 
-        player1.SetActive(false);
-        player2.SetActive(false);
-        player3.SetActive(false);
-        player4.SetActive(false);
+            player1.SetActive(false);
+            player2.SetActive(false);
+            player3.SetActive(false);
+            player4.SetActive(false);
+        }
+        else
+        {
+            
+        }
+  
     }
     void Update(){
         if(Input.GetKeyDown(KeyCode.Escape)){

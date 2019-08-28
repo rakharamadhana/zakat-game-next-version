@@ -7,7 +7,6 @@ public class FollowThePath : MonoBehaviour {
     //public Transform[] waypoints;
     public List<GameObject> waypoints = new List<GameObject>();
 
-
     [SerializeField]
     private float moveSpeed = 1f;
 
@@ -24,13 +23,13 @@ public class FollowThePath : MonoBehaviour {
         waypoints.Reverse(); */
         transform.position = waypoints[waypointIndex].transform.position;
 
-       
 	}
 	
 	// Update is called once per frame
 	private void Update () {
         
         if (moveAllowed){
+            
             Move();
         }
         
@@ -38,13 +37,14 @@ public class FollowThePath : MonoBehaviour {
 
     private void Move()
     {
-        
+
         if (waypointIndex <= waypoints.Count - 1)
         {
             //LadderCheck();
             transform.position = Vector2.MoveTowards(transform.position,
             waypoints[waypointIndex].transform.position,
             moveSpeed * Time.deltaTime);
+            //Debug.Log(transform.position + waypoints[waypointIndex].transform.position);
 
             if (transform.position == waypoints[waypointIndex].transform.position)
             {

@@ -9,9 +9,11 @@ public class GameControl : MonoBehaviour {
     public GameObject exitPanel;
     public GameObject menuPanel;
 
-    private static GameObject whoWinsTextShadow, player1MoveText, player2MoveText,player3MoveText, player4MoveText;
+    private static GameObject winning, whoWinsTextShadow, player1MoveText, player2MoveText,player3MoveText, player4MoveText;
 
     private static GameObject player1, player2, player3, player4;
+
+    private static GameObject _animPlayer1, _animPlayer2, _animPlayer3, _animPlayer4;
 
     public static int nofPlayers;
 
@@ -36,6 +38,7 @@ public class GameControl : MonoBehaviour {
         player4StartWaypoint = 0;
         gameOver = false;
 
+        winning = GameObject.Find("Winning");
         whoWinsTextShadow = GameObject.Find("WhoWinsText");
         player1MoveText = GameObject.Find("Player1MoveText");
         player2MoveText = GameObject.Find("Player2MoveText");
@@ -47,11 +50,18 @@ public class GameControl : MonoBehaviour {
         player3 = GameObject.Find("Player3");
         player4 = GameObject.Find("Player4");
 
+        _animPlayer1 = GameObject.Find("Player1Sprite");
+        _animPlayer2 = GameObject.Find("Player2Sprite");
+        _animPlayer3 = GameObject.Find("Player3Sprite");
+        _animPlayer4 = GameObject.Find("Player4Sprite");
+
+
         player1.GetComponent<FollowThePath>().moveAllowed = false;
         player2.GetComponent<FollowThePath>().moveAllowed = false;
         player3.GetComponent<FollowThePath>().moveAllowed = false;
         player4.GetComponent<FollowThePath>().moveAllowed = false;
 
+        winning.gameObject.SetActive(false);
         whoWinsTextShadow.gameObject.SetActive(false);
         player1MoveText.gameObject.SetActive(true);
         player2MoveText.gameObject.SetActive(false);
@@ -70,7 +80,7 @@ public class GameControl : MonoBehaviour {
                 menuPanel.SetActive(true);
             }
         }
-        if(Dice.whosTurn == 1){
+        if(Dice.whosTurn == 1){            
             player1MoveText.gameObject.SetActive(true);
             player2MoveText.gameObject.SetActive(false);
             player3MoveText.gameObject.SetActive(false);
@@ -393,31 +403,35 @@ public class GameControl : MonoBehaviour {
         //pl4
 
 
-        if (player1.GetComponent<FollowThePath>().waypointIndex == 
+        if (player1.GetComponent<FollowThePath>().waypointIndex >= 
             player1.GetComponent<FollowThePath>().waypoints.Count)
         {
+            winning.gameObject.SetActive(true);
             whoWinsTextShadow.gameObject.SetActive(true);
             whoWinsTextShadow.GetComponent<Text>().text = "Player 1 Wins";
             gameOver = true;
         }
 
-        if (player2.GetComponent<FollowThePath>().waypointIndex ==
+        if (player2.GetComponent<FollowThePath>().waypointIndex >=
             player2.GetComponent<FollowThePath>().waypoints.Count)
         {
+            winning.gameObject.SetActive(true);
             whoWinsTextShadow.gameObject.SetActive(true);
             whoWinsTextShadow.GetComponent<Text>().text = "Player 2 Wins";
             gameOver = true;
         }
-        if (player3.GetComponent<FollowThePath>().waypointIndex ==
+        if (player3.GetComponent<FollowThePath>().waypointIndex >=
             player3.GetComponent<FollowThePath>().waypoints.Count)
         {
+            winning.gameObject.SetActive(true);
             whoWinsTextShadow.gameObject.SetActive(true);
             whoWinsTextShadow.GetComponent<Text>().text = "Player 3 Wins";
             gameOver = true;
         }
-        if (player4.GetComponent<FollowThePath>().waypointIndex ==
+        if (player4.GetComponent<FollowThePath>().waypointIndex >=
             player4.GetComponent<FollowThePath>().waypoints.Count)
         {
+            winning.gameObject.SetActive(true);
             whoWinsTextShadow.gameObject.SetActive(true);
             whoWinsTextShadow.GetComponent<Text>().text = "Player 4 Wins";
             gameOver = true;

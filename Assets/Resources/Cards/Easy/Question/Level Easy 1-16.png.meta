@@ -1,0 +1,595 @@
+fileFormatVersion: 2
+guid: 6f0ebe6c69c489a4493c4d770c8af66c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8664692088512601168
+    second: Level Easy 5
+  - first:
+      213: -6444362580943636572
+    second: Level Easy 4
+  - first:
+      213: -2574259843758604272
+    second: Level Easy 3
+  - first:
+      213: -4838824009478020283
+    second: Level Easy 2
+  - first:
+      213: -4785800141996823746
+    second: Level Easy 1
+  - first:
+      213: -3821605582973720692
+    second: Level Easy 10
+  - first:
+      213: 5290895589495989065
+    second: Level Easy 9
+  - first:
+      213: 1584041373640953705
+    second: Level Easy 8
+  - first:
+      213: 3910109743913190854
+    second: Level Easy 7
+  - first:
+      213: -2743167619744794405
+    second: Level Easy 6
+  - first:
+      213: 3029386464167372237
+    second: Level Easy 15
+  - first:
+      213: -7853344499231624188
+    second: Level Easy 14
+  - first:
+      213: 6839334407724941090
+    second: Level Easy 13
+  - first:
+      213: 3130621030916574681
+    second: Level Easy 12
+  - first:
+      213: -2841627503849125184
+    second: Level Easy 11
+  - first:
+      213: 8974343256860414291
+    second: Level Easy 20
+  - first:
+      213: 5333469861100253218
+    second: Level Easy 19
+  - first:
+      213: -5302778319675310
+    second: Level Easy 18
+  - first:
+      213: 2185492121101033841
+    second: Level Easy 17
+  - first:
+      213: 9216504849490794471
+    second: Level Easy 16
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Level Easy 5
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 3151
+        width: 656
+        height: 987
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea5d61aa887fb04fbbb2e8bb8ce947e
+      internalID: 8664692088512601168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 4
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 3151
+        width: 656
+        height: 987
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a50ec38ae8890f44b9e8df0a463d170
+      internalID: -6444362580943636572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 3
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 3151
+        width: 656
+        height: 987
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18a8a9a7a4ca454d8b59cff5de303d9
+      internalID: -2574259843758604272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 2
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 3151
+        width: 656
+        height: 987
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc9b63dfe545ae45b7a72676509adc3
+      internalID: -4838824009478020283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 1
+      rect:
+        serializedVersion: 2
+        x: 2791
+        y: 3156
+        width: 656
+        height: 987
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12106e83b3cc9142a99df4fbc5d541c
+      internalID: -4785800141996823746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 10
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 2123
+        width: 652
+        height: 986
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1bcb23b86fbdeb40922040f6b8ed9b7
+      internalID: -3821605582973720692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 9
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 2123
+        width: 656
+        height: 986
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc12a2824140a242a42d95c5dcf5aba
+      internalID: 5290895589495989065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 8
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 2123
+        width: 656
+        height: 986
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d875a6bb55723054ba1b55eb22dee445
+      internalID: 1584041373640953705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 7
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 2123
+        width: 656
+        height: 986
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc58814e5304323468f601ed43e5847d
+      internalID: 3910109743913190854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 6
+      rect:
+        serializedVersion: 2
+        x: 2796
+        y: 2123
+        width: 656
+        height: 986
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cba338bac92874ba61db6c6e6cecf8
+      internalID: -2743167619744794405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 15
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1097
+        width: 652
+        height: 985
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a82a153987916499754212278f4a5f
+      internalID: 3029386464167372237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 14
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 1097
+        width: 656
+        height: 985
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07accc06714902f48b66f7c5d45af665
+      internalID: -7853344499231624188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 13
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 1097
+        width: 656
+        height: 985
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6126de3d6292ceb4886421f5050b4a4a
+      internalID: 6839334407724941090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 12
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 1097
+        width: 656
+        height: 985
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90212825a0ea4e345b803bcdeab4acce
+      internalID: 3130621030916574681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 11
+      rect:
+        serializedVersion: 2
+        x: 2796
+        y: 1097
+        width: 656
+        height: 985
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a273459ea7974418e6e948a625ca1b
+      internalID: -2841627503849125184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 20
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 69
+        width: 652
+        height: 985
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73bda0f07b342cf408218436f8ed81e6
+      internalID: 8974343256860414291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 19
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 69
+        width: 656
+        height: 985
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb65b2a0b3ac2c46b8e89d45a9ecd79
+      internalID: 5333469861100253218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 18
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 69
+        width: 656
+        height: 985
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d70a06b2fc3fe249a59b18cf8d533dd
+      internalID: -5302778319675310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 17
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 69
+        width: 656
+        height: 985
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f954e59166a3f849b77566828b337d1
+      internalID: 2185492121101033841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Easy 16
+      rect:
+        serializedVersion: 2
+        x: 2796
+        y: 69
+        width: 656
+        height: 985
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f8ce0f5d7a3e147804403ca009298e
+      internalID: 9216504849490794471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
