@@ -13,8 +13,6 @@ public class GameControl : MonoBehaviour {
 
     private static GameObject player1, player2, player3, player4;
 
-    private static GameObject _animPlayer1, _animPlayer2, _animPlayer3, _animPlayer4;
-
     public static int nofPlayers;
 
     public static int diceSideThrown = 0;
@@ -50,11 +48,6 @@ public class GameControl : MonoBehaviour {
         player3 = GameObject.Find("Player3");
         player4 = GameObject.Find("Player4");
 
-        _animPlayer1 = GameObject.Find("Player1Sprite");
-        _animPlayer2 = GameObject.Find("Player2Sprite");
-        _animPlayer3 = GameObject.Find("Player3Sprite");
-        _animPlayer4 = GameObject.Find("Player4Sprite");
-
         player1.GetComponent<FollowThePath>().moveAllowed = false;
         player2.GetComponent<FollowThePath>().moveAllowed = false;
         player3.GetComponent<FollowThePath>().moveAllowed = false;
@@ -69,6 +62,24 @@ public class GameControl : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        switch (nofPlayers)
+        {
+            case 1:
+                player2.gameObject.SetActive(false);
+                player3.gameObject.SetActive(false);
+                player4.gameObject.SetActive(false);
+                break;
+            case 2:
+                player3.gameObject.SetActive(false);
+                player4.gameObject.SetActive(false);
+                break;
+            case 3:
+                player4.gameObject.SetActive(false);
+                break;
+            case 4:
+                break;
+        }
+
         if(gameOver){
             if (SceneManager.GetActiveScene().name == "Menu")
             {

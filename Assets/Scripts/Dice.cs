@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Dice : MonoBehaviour
 {
 
     private Sprite[] diceSides;
     private SpriteRenderer rend;
+    private GameObject player1MoveValue, player2MoveValue, player3MoveValue, player4MoveValue;
+    private GameObject player1, player2, player3, player4;
+
+    bool player1Moving, player2Moving, player3Moving, player4Moving, isMoving;
     public static int whosTurn = 1;
     private bool coroutineAllowed = true;
-
 
     // Use this for initialization
     private void Start()
@@ -17,20 +21,39 @@ public class Dice : MonoBehaviour
         rend = GetComponent<SpriteRenderer>();
         diceSides = Resources.LoadAll<Sprite>("DiceSides/");
         rend.sprite = diceSides[5];
+
+        player1 = GameObject.Find("Player1");
+        player2 = GameObject.Find("Player2");
+        player3 = GameObject.Find("Player3");
+        player4 = GameObject.Find("Player4");
+
+        player1MoveValue = GameObject.Find("Player1MoveValue");
+        player2MoveValue = GameObject.Find("Player2MoveValue");
+        player3MoveValue = GameObject.Find("Player3MoveValue");
+        player4MoveValue = GameObject.Find("Player4MoveValue");
     }
 
     private void OnMouseDown()
     {
-        if (!GameControl.gameOver && coroutineAllowed)
-            StartCoroutine("RollTheDice");
-        GetComponent<AudioSource>().Play();
-    }
+        player1Moving = player1.GetComponent<FollowThePath>().moveAllowed;
+        player2Moving = player2.GetComponent<FollowThePath>().moveAllowed;
+        player3Moving = player3.GetComponent<FollowThePath>().moveAllowed;
+        player4Moving = player4.GetComponent<FollowThePath>().moveAllowed;
 
-    public void RollDice()
-    {
-        if (!GameControl.gameOver && coroutineAllowed)
+        if (player1Moving || player2Moving || player3Moving || player4Moving)
+        {
+            isMoving = true;
+        }
+        else
+        {
+            isMoving = false;
+        }
+
+        if (!GameControl.gameOver && coroutineAllowed && !isMoving)
+        {
             StartCoroutine("RollTheDice");
-        GetComponent<AudioSource>().Play();
+            GetComponent<AudioSource>().Play();
+        }
     }
 
     private IEnumerator RollTheDice()
@@ -51,7 +74,11 @@ public class Dice : MonoBehaviour
         switch (GameControl.nofPlayers)
         {
             case 1:
-                whosTurn =1;
+                whosTurn = 1;
+                player1MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                player2MoveValue.GetComponent<Text>().text = "0";
+                player3MoveValue.GetComponent<Text>().text = "0";
+                player4MoveValue.GetComponent<Text>().text = "0";
                 GameControl.MovePlayer(1);
                 break;
             case 2:
@@ -60,11 +87,19 @@ public class Dice : MonoBehaviour
                     if (whosTurn == 1)
                     {
                         whosTurn = 1;
+                        player1MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                        player2MoveValue.GetComponent<Text>().text = "0";
+                        player3MoveValue.GetComponent<Text>().text = "0";
+                        player4MoveValue.GetComponent<Text>().text = "0";
                         GameControl.MovePlayer(1);
                     }
                     else if (whosTurn == 2)
                     {
                         whosTurn = 2;
+                        player2MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                        player1MoveValue.GetComponent<Text>().text = "0";
+                        player3MoveValue.GetComponent<Text>().text = "0";
+                        player4MoveValue.GetComponent<Text>().text = "0";
                         GameControl.MovePlayer(2);
                     }
                     coroutineAllowed = true;
@@ -74,12 +109,20 @@ public class Dice : MonoBehaviour
                     if (whosTurn == 1)
                     {
                         whosTurn = 2;
+                        player1MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                        player2MoveValue.GetComponent<Text>().text = "0";
+                        player3MoveValue.GetComponent<Text>().text = "0";
+                        player4MoveValue.GetComponent<Text>().text = "0";
                         GameControl.MovePlayer(1);
 
                     }
                     else if (whosTurn == 2)
                     {
                         whosTurn = 1;
+                        player2MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                        player1MoveValue.GetComponent<Text>().text = "0";
+                        player3MoveValue.GetComponent<Text>().text = "0";
+                        player4MoveValue.GetComponent<Text>().text = "0";
                         GameControl.MovePlayer(2);
 
                     }
@@ -91,14 +134,27 @@ public class Dice : MonoBehaviour
                     if (whosTurn == 1)
                     {
                         whosTurn = 1;
+                        player1MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                        player2MoveValue.GetComponent<Text>().text = "0";
+                        player3MoveValue.GetComponent<Text>().text = "0";
+                        player4MoveValue.GetComponent<Text>().text = "0";
                         GameControl.MovePlayer(1);
                     }
                     else if (whosTurn == 2)
                     {
                         whosTurn = 2;
+                        player2MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                        player1MoveValue.GetComponent<Text>().text = "0";
+                        player3MoveValue.GetComponent<Text>().text = "0";
+                        player4MoveValue.GetComponent<Text>().text = "0";
                         GameControl.MovePlayer(2);
+
                     }else if(whosTurn == 3){
                         whosTurn =3;
+                        player3MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                        player2MoveValue.GetComponent<Text>().text = "0";
+                        player1MoveValue.GetComponent<Text>().text = "0";
+                        player4MoveValue.GetComponent<Text>().text = "0";
                         GameControl.MovePlayer(3);
                     }
                     coroutineAllowed = true;
@@ -108,16 +164,29 @@ public class Dice : MonoBehaviour
                     if (whosTurn == 1)
                     {
                         whosTurn = 2;
+                        player1MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                        player2MoveValue.GetComponent<Text>().text = "0";
+                        player3MoveValue.GetComponent<Text>().text = "0";
+                        player4MoveValue.GetComponent<Text>().text = "0";
                         GameControl.MovePlayer(1);
 
                     }
                     else if (whosTurn == 2)
                     {
                         whosTurn = 3;
+                        player2MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                        player1MoveValue.GetComponent<Text>().text = "0";
+                        player3MoveValue.GetComponent<Text>().text = "0";
+                        player4MoveValue.GetComponent<Text>().text = "0";
                         GameControl.MovePlayer(2);
                     }
-                    else if(whosTurn == 3){
+                    else if(whosTurn == 3)
+                    {
                         whosTurn = 1;
+                        player3MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                        player2MoveValue.GetComponent<Text>().text = "0";
+                        player1MoveValue.GetComponent<Text>().text = "0";
+                        player4MoveValue.GetComponent<Text>().text = "0";
                         GameControl.MovePlayer(3);
                     }
                 }
@@ -128,18 +197,36 @@ public class Dice : MonoBehaviour
                     if (whosTurn == 1)
                     {
                         whosTurn = 1;
+                        player1MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                        player2MoveValue.GetComponent<Text>().text = "0";
+                        player3MoveValue.GetComponent<Text>().text = "0";
+                        player4MoveValue.GetComponent<Text>().text = "0";
                         GameControl.MovePlayer(1);
                     }
                     else if (whosTurn == 2)
                     {
                         whosTurn = 2;
+                        player2MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                        player1MoveValue.GetComponent<Text>().text = "0";
+                        player3MoveValue.GetComponent<Text>().text = "0";
+                        player4MoveValue.GetComponent<Text>().text = "0";
                         GameControl.MovePlayer(2);
-                    }else if(whosTurn == 3){
+                    }
+                    else if(whosTurn == 3)
+                    {
                         whosTurn =3;
+                        player3MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                        player2MoveValue.GetComponent<Text>().text = "0";
+                        player1MoveValue.GetComponent<Text>().text = "0";
+                        player4MoveValue.GetComponent<Text>().text = "0";
                         GameControl.MovePlayer(3);
                     }
                     else if(whosTurn == 4){
                         whosTurn = 4;
+                        player4MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                        player2MoveValue.GetComponent<Text>().text = "0";
+                        player3MoveValue.GetComponent<Text>().text = "0";
+                        player1MoveValue.GetComponent<Text>().text = "0";
                         GameControl.MovePlayer(4);
                     }
                     coroutineAllowed = true;
@@ -149,19 +236,37 @@ public class Dice : MonoBehaviour
                     if (whosTurn == 1)
                     {
                         whosTurn = 2;
+                        player1MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                        player2MoveValue.GetComponent<Text>().text = "0";
+                        player3MoveValue.GetComponent<Text>().text = "0";
+                        player4MoveValue.GetComponent<Text>().text = "0";
                         GameControl.MovePlayer(1);
 
                     }
                     else if (whosTurn == 2)
                     {
                         whosTurn = 3;
+                        player2MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                        player1MoveValue.GetComponent<Text>().text = "0";
+                        player3MoveValue.GetComponent<Text>().text = "0";
+                        player4MoveValue.GetComponent<Text>().text = "0";
                         GameControl.MovePlayer(2);
                     }
-                    else if(whosTurn == 3){
+                    else if(whosTurn == 3)
+                    {
                         whosTurn = 4;
+                        player3MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                        player2MoveValue.GetComponent<Text>().text = "0";
+                        player1MoveValue.GetComponent<Text>().text = "0";
+                        player4MoveValue.GetComponent<Text>().text = "0";
                         GameControl.MovePlayer(3);
-                    }else if(whosTurn == 4){
+                    }
+                    else if(whosTurn == 4){
                         whosTurn = 1;
+                        player4MoveValue.GetComponent<Text>().text = GameControl.diceSideThrown.ToString();
+                        player2MoveValue.GetComponent<Text>().text = "0";
+                        player3MoveValue.GetComponent<Text>().text = "0";
+                        player1MoveValue.GetComponent<Text>().text = "0";
                         GameControl.MovePlayer(4);
                     }
                 }

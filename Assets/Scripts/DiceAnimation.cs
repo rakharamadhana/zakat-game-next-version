@@ -8,14 +8,14 @@ public class DiceAnimation : MonoBehaviour
     GameObject player1, player2, player3, player4;
 
     bool player1Moving, player2Moving, player3Moving, player4Moving, isMoving;
-    public int player;
 
     private int whosTurn;
+    private int transparentColor;
 
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();        
         player1 = GameObject.Find("Player1");
         player2 = GameObject.Find("Player2");
         player3 = GameObject.Find("Player3");
@@ -30,37 +30,19 @@ public class DiceAnimation : MonoBehaviour
         player3Moving = player3.GetComponent<FollowThePath>().moveAllowed;
         player4Moving = player4.GetComponent<FollowThePath>().moveAllowed;
 
-        if (player == 1)
-        {
-            isMoving = player1Moving;
-        }
-
-        if (player == 2)
-        {
-            isMoving = player2Moving;
-        }
-
-        if (player == 3)
-        {
-            isMoving = player3Moving;
-        }
-
-        if (player == 4)
-        {
-            isMoving = player4Moving;
-        }
-
         whosTurn = Dice.whosTurn;
         //Debug.Log(whosTurn);
         //Debug.Log(player);
-        if (!isMoving)
+        if (player1Moving || player2Moving || player3Moving || player4Moving)
         {
-            anim.enabled = true;
+            Wait(1);
+            this.GetComponentInChildren<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+            anim.enabled = false;
         }
         else
         {
-            Wait(1);
-            anim.enabled = false;
+            this.GetComponentInChildren<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+            anim.enabled = true;
         }
     }
 

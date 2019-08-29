@@ -53,13 +53,28 @@ public class PlayAnimation : MonoBehaviour
         whosTurn = Dice.whosTurn;
         //Debug.Log(whosTurn);
         //Debug.Log(player);
-        if (whosTurn == player || isMoving)
+        if (whosTurn == player)
         {
             anim.enabled = true;
+
+            if (isMoving)
+            {            
+                //anim.SetBool("Jumping", true);
+                //Debug.Log("Player" + whosTurn + "isMoving => " + isMoving);
+            }
+            else
+            {
+                //anim.SetBool("Jumping", false);
+                //Debug.Log("Player" + whosTurn + "isMoving => " + isMoving);
+            }
+            
+            
         }
         else
         {
-            Wait(1);
+            //Debug.Log(whosTurn);
+            Wait(3);
+            //anim.SetBool("Jumping", false);
             anim.enabled = false;
         }
     }
