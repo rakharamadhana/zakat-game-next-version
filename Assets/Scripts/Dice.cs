@@ -4,11 +4,16 @@ using UnityEngine.UI;
 
 public class Dice : MonoBehaviour
 {
-
+    private Animator diceAnim;
     private Sprite[] diceSides;
+    private GameObject diceObject;
+    private Text turn;
     private SpriteRenderer rend;
     private GameObject player1MoveValue, player2MoveValue, player3MoveValue, player4MoveValue;
     private GameObject player1, player2, player3, player4;
+
+    private Text turnText;
+    private int i;
 
     bool player1Moving, player2Moving, player3Moving, player4Moving, isMoving;
     public static int whosTurn = 1;
@@ -18,7 +23,15 @@ public class Dice : MonoBehaviour
     private void Start()
     {
         whosTurn = 1;
-        rend = GetComponent<SpriteRenderer>();
+
+        turn = GameObject.Find("Turn").GetComponent<Text>();
+        i = 1;
+        turn.text = i.ToString();
+
+        diceObject = GameObject.Find("DiceSprite");
+        diceAnim = diceObject.GetComponent<Animator>();
+
+        rend = diceObject.GetComponent<SpriteRenderer>();
         diceSides = Resources.LoadAll<Sprite>("DiceSides/");
         rend.sprite = diceSides[5];
 
@@ -51,8 +64,11 @@ public class Dice : MonoBehaviour
 
         if (!GameControl.gameOver && coroutineAllowed && !isMoving)
         {
+            i++;
+            diceAnim.SetTrigger("Rotate");
             StartCoroutine("RollTheDice");
             GetComponent<AudioSource>().Play();
+            turn.text = i.ToString();
         }
     }
 

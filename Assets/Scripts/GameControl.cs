@@ -9,11 +9,15 @@ public class GameControl : MonoBehaviour {
     public GameObject exitPanel;
     public GameObject menuPanel;
 
-    private static GameObject winning, whoWinsTextShadow, player1MoveText, player2MoveText,player3MoveText, player4MoveText;
+    private static GameObject winning, whoWinsTextShadow, pointer;
 
     private static GameObject player1, player2, player3, player4;
 
+    private static GameObject pointerWaypoint1, pointerWaypoint2, pointerWaypoint3, pointerWaypoint4;
+
+
     public static int nofPlayers;
+    public int pointerMoveSpeed;
 
     public static int diceSideThrown = 0;
     public static int player1StartWaypoint = 0;
@@ -26,7 +30,7 @@ public class GameControl : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        Screen.orientation = ScreenOrientation.LandscapeLeft;
+        Screen.orientation = ScreenOrientation.Portrait;
 
         diceSideThrown = 0;
         player1StartWaypoint = 0;
@@ -38,10 +42,12 @@ public class GameControl : MonoBehaviour {
 
         winning = GameObject.Find("Winning");
         whoWinsTextShadow = GameObject.Find("WhoWinsText");
-        player1MoveText = GameObject.Find("Player1MoveText");
-        player2MoveText = GameObject.Find("Player2MoveText");
-        player3MoveText = GameObject.Find("Player3MoveText");
-        player4MoveText = GameObject.Find("Player4MoveText");
+        pointer = GameObject.Find("Pointer");
+
+        pointerWaypoint1 = GameObject.Find("PointerWaypoint1");
+        pointerWaypoint2 = GameObject.Find("PointerWaypoint2");
+        pointerWaypoint3 = GameObject.Find("PointerWaypoint3");
+        pointerWaypoint4 = GameObject.Find("PointerWaypoint4");
 
         player1 = GameObject.Find("Player1");
         player2 = GameObject.Find("Player2");
@@ -55,8 +61,7 @@ public class GameControl : MonoBehaviour {
 
         winning.gameObject.SetActive(false);
         whoWinsTextShadow.gameObject.SetActive(false);
-        player1MoveText.gameObject.SetActive(true);
-        player2MoveText.gameObject.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -90,28 +95,32 @@ public class GameControl : MonoBehaviour {
                 menuPanel.SetActive(true);
             }
         }
-        if(Dice.whosTurn == 1){            
-            player1MoveText.gameObject.SetActive(true);
-            player2MoveText.gameObject.SetActive(false);
-            player3MoveText.gameObject.SetActive(false);
-            player4MoveText.gameObject.SetActive(false);
-        }else if(Dice.whosTurn == 2){
-            player1MoveText.gameObject.SetActive(false);
-            player2MoveText.gameObject.SetActive(true);
-            player3MoveText.gameObject.SetActive(false);
-            player4MoveText.gameObject.SetActive(false);
+        if(Dice.whosTurn == 1) {
+            //Debug.Log("Player 1");
+            pointer.transform.position = Vector2.MoveTowards(
+                pointer.transform.position,
+                pointerWaypoint1.transform.position,
+                pointerMoveSpeed * Time.deltaTime);
+        }
+        else if(Dice.whosTurn == 2){
+            //Debug.Log("Player 2");
+            pointer.transform.position = Vector2.MoveTowards(
+                pointer.transform.position,
+                pointerWaypoint2.transform.position,
+                pointerMoveSpeed * Time.deltaTime);
         }
         else if(Dice.whosTurn == 3){
-            player1MoveText.gameObject.SetActive(false);
-            player2MoveText.gameObject.SetActive(false);
-            player3MoveText.gameObject.SetActive(true);
-            player4MoveText.gameObject.SetActive(false);
+            //Debug.Log("Player 3");
+            pointer.transform.position = Vector2.MoveTowards(
+                pointer.transform.position,
+                pointerWaypoint3.transform.position,
+                pointerMoveSpeed * Time.deltaTime);
         }
         else if(Dice.whosTurn == 4){
-            player1MoveText.gameObject.SetActive(false);
-            player2MoveText.gameObject.SetActive(false);
-            player3MoveText.gameObject.SetActive(false);
-            player4MoveText.gameObject.SetActive(true);
+            pointer.transform.position = Vector2.MoveTowards(
+                pointer.transform.position,
+                pointerWaypoint4.transform.position,
+                pointerMoveSpeed * Time.deltaTime);
         }
 // Player 2
         if (player2.GetComponent<FollowThePath>().waypointIndex >

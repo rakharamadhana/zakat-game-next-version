@@ -25,7 +25,7 @@ public class ButtonControl : MonoBehaviour
             player1 = GameObject.Find("1P");
             player2 = GameObject.Find("2P");
             player3 = GameObject.Find("3P");
-            player4 = GameObject.Find("4P");
+            player4 = GameObject.Find("4P");            
 
             player1.SetActive(false);
             player2.SetActive(false);
@@ -67,12 +67,15 @@ public class ButtonControl : MonoBehaviour
     {
         menuPanel.SetActive(false);
         exitPanel.SetActive(false);
-        playButton.SetActive(false);
+        playButton.GetComponent<Image>().enabled = false;
+        playButton.GetComponentInChildren<Text>().enabled = false;
 
         player1.SetActive(true);
         player2.SetActive(true);
         player3.SetActive(true);
         player4.SetActive(true);
+
+
     }
 
     public void ResetBtn()

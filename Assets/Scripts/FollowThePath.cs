@@ -76,7 +76,6 @@ public class FollowThePath : MonoBehaviour {
             moveSpeed * Time.deltaTime);
             //Debug.Log(transform.position + waypoints[waypointIndex].transform.position);
             
-
             if (transform.position == waypoints[waypointIndex].transform.position)
             {
                 this.GetComponent<AudioSource>().Play();
