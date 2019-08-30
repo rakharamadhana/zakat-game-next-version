@@ -1,67 +1,67 @@
 fileFormatVersion: 2
-guid: 6f0ebe6c69c489a4493c4d770c8af66c
+guid: 241388ca6739d054cb035686c3263bfc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8664692088512601168
-    second: Level Easy 5
+      213: 6644016827849378274
+    second: Kartu Hadiah 20 Buah Bolak-balik_0
   - first:
-      213: -6444362580943636572
-    second: Level Easy 4
+      213: -4142206937265490244
+    second: Kartu Hadiah 20 Buah Bolak-balik_1
   - first:
-      213: -2574259843758604272
-    second: Level Easy 3
+      213: -811506608217775067
+    second: Kartu Hadiah 20 Buah Bolak-balik_2
   - first:
-      213: -4838824009478020283
-    second: Level Easy 2
+      213: 560546946940519182
+    second: Kartu Hadiah 20 Buah Bolak-balik_3
   - first:
-      213: -4785800141996823746
-    second: Level Easy 1
+      213: 5285332563288248222
+    second: Kartu Hadiah 20 Buah Bolak-balik_4
   - first:
-      213: -3821605582973720692
-    second: Level Easy 10
+      213: 1260682306760826910
+    second: Kartu Hadiah 20 Buah Bolak-balik_5
   - first:
-      213: 5290895589495989065
-    second: Level Easy 9
+      213: 2230967088775753105
+    second: Kartu Hadiah 20 Buah Bolak-balik_6
   - first:
-      213: 1584041373640953705
-    second: Level Easy 8
+      213: 5735602386201764268
+    second: Kartu Hadiah 20 Buah Bolak-balik_7
   - first:
-      213: 3910109743913190854
-    second: Level Easy 7
+      213: 5615905246644076087
+    second: Kartu Hadiah 20 Buah Bolak-balik_8
   - first:
-      213: -2743167619744794405
-    second: Level Easy 6
+      213: 8547757857167582772
+    second: Kartu Hadiah 20 Buah Bolak-balik_9
   - first:
-      213: 3029386464167372237
-    second: Level Easy 15
+      213: -7600366021696445676
+    second: Kartu Hadiah 20 Buah Bolak-balik_10
   - first:
-      213: -7853344499231624188
-    second: Level Easy 14
+      213: 6733365739796801869
+    second: Kartu Hadiah 20 Buah Bolak-balik_11
   - first:
-      213: 6839334407724941090
-    second: Level Easy 13
+      213: -8694529348413746766
+    second: Kartu Hadiah 20 Buah Bolak-balik_12
   - first:
-      213: 3130621030916574681
-    second: Level Easy 12
+      213: 4847536577944632085
+    second: Kartu Hadiah 20 Buah Bolak-balik_13
   - first:
-      213: -2841627503849125184
-    second: Level Easy 11
+      213: -6418405064685169148
+    second: Kartu Hadiah 20 Buah Bolak-balik_14
   - first:
-      213: 8974343256860414291
-    second: Level Easy 20
+      213: 409852646522577172
+    second: Kartu Hadiah 20 Buah Bolak-balik_15
   - first:
-      213: 5333469861100253218
-    second: Level Easy 19
+      213: -4839571768257548990
+    second: Kartu Hadiah 20 Buah Bolak-balik_16
   - first:
-      213: -5302778319675310
-    second: Level Easy 18
+      213: 4005144448838593029
+    second: Kartu Hadiah 20 Buah Bolak-balik_17
   - first:
-      213: 2185492121101033841
-    second: Level Easy 17
+      213: -7226788645965956703
+    second: Kartu Hadiah 20 Buah Bolak-balik_18
   - first:
-      213: 9216504849490794471
-    second: Level Easy 16
+      213: 8707055198817813758
+    second: Kartu Hadiah 20 Buah Bolak-balik_19
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -158,421 +158,421 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Level Easy 5
+      name: Kartu Hadiah 20 Buah Bolak-balik_0
       rect:
         serializedVersion: 2
-        x: 56
-        y: 3151
+        x: 0
+        y: 3365
+        width: 653
+        height: 984
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf1936293fcd5147a70a89eb5bdd6c5
+      internalID: 6644016827849378274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hadiah 20 Buah Bolak-balik_1
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 3365
         width: 656
-        height: 987
+        height: 984
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dea5d61aa887fb04fbbb2e8bb8ce947e
-      internalID: 8664692088512601168
+      spriteID: bcdd095e152b4c84c971e07c5c730723
+      internalID: -4142206937265490244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Easy 4
+      name: Kartu Hadiah 20 Buah Bolak-balik_2
       rect:
         serializedVersion: 2
-        x: 740
-        y: 3151
+        x: 1715
+        y: 3365
         width: 656
-        height: 987
+        height: 984
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a50ec38ae8890f44b9e8df0a463d170
-      internalID: -6444362580943636572
+      spriteID: 5efbbd27b4bbe1a4bb0f3e5dfdbc52ca
+      internalID: -811506608217775067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Easy 3
+      name: Kartu Hadiah 20 Buah Bolak-balik_3
       rect:
         serializedVersion: 2
-        x: 1426
-        y: 3151
+        x: 2575
+        y: 3365
         width: 656
-        height: 987
+        height: 984
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e18a8a9a7a4ca454d8b59cff5de303d9
-      internalID: -2574259843758604272
+      spriteID: efdf09821d3ab6846ae44bf1f6f5aec9
+      internalID: 560546946940519182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Easy 2
+      name: Kartu Hadiah 20 Buah Bolak-balik_4
       rect:
         serializedVersion: 2
-        x: 2110
-        y: 3151
-        width: 656
-        height: 987
+        x: 3389
+        y: 3365
+        width: 653
+        height: 984
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fc9b63dfe545ae45b7a72676509adc3
-      internalID: -4838824009478020283
+      spriteID: 904063a977c07214cb13160e69130c51
+      internalID: 5285332563288248222
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Easy 1
+      name: Kartu Hadiah 20 Buah Bolak-balik_5
       rect:
         serializedVersion: 2
-        x: 2791
-        y: 3156
-        width: 656
-        height: 987
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a12106e83b3cc9142a99df4fbc5d541c
-      internalID: -4785800141996823746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 10
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 2123
-        width: 652
-        height: 986
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1bcb23b86fbdeb40922040f6b8ed9b7
-      internalID: -3821605582973720692
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 9
-      rect:
-        serializedVersion: 2
-        x: 740
-        y: 2123
-        width: 656
-        height: 986
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bcc12a2824140a242a42d95c5dcf5aba
-      internalID: 5290895589495989065
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 8
-      rect:
-        serializedVersion: 2
-        x: 1426
-        y: 2123
-        width: 656
-        height: 986
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d875a6bb55723054ba1b55eb22dee445
-      internalID: 1584041373640953705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 7
-      rect:
-        serializedVersion: 2
-        x: 2110
-        y: 2123
-        width: 656
-        height: 986
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc58814e5304323468f601ed43e5847d
-      internalID: 3910109743913190854
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 6
-      rect:
-        serializedVersion: 2
-        x: 2796
-        y: 2123
-        width: 656
-        height: 986
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11cba338bac92874ba61db6c6e6cecf8
-      internalID: -2743167619744794405
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 15
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 1097
-        width: 652
+        x: 0
+        y: 2244
+        width: 653
         height: 985
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1a82a153987916499754212278f4a5f
-      internalID: 3029386464167372237
+      spriteID: 333bc0f45dbede34b96bbc6818a71cfe
+      internalID: 1260682306760826910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Easy 14
+      name: Kartu Hadiah 20 Buah Bolak-balik_6
       rect:
         serializedVersion: 2
-        x: 742
-        y: 1097
+        x: 848
+        y: 2244
+        width: 655
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85dbb54424c953345ab72e5b5b069628
+      internalID: 2230967088775753105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hadiah 20 Buah Bolak-balik_7
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 2244
         width: 656
         height: 985
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07accc06714902f48b66f7c5d45af665
-      internalID: -7853344499231624188
+      spriteID: e7ca6c1190b11394aba535e88a9a4e63
+      internalID: 5735602386201764268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Easy 13
+      name: Kartu Hadiah 20 Buah Bolak-balik_8
       rect:
         serializedVersion: 2
-        x: 1426
-        y: 1097
+        x: 2575
+        y: 2244
         width: 656
         height: 985
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6126de3d6292ceb4886421f5050b4a4a
-      internalID: 6839334407724941090
+      spriteID: b3791cf386cc9bd41a393b56fb571fb6
+      internalID: 5615905246644076087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Easy 12
+      name: Kartu Hadiah 20 Buah Bolak-balik_9
       rect:
         serializedVersion: 2
-        x: 2112
-        y: 1097
+        x: 3389
+        y: 2244
+        width: 653
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eeb4707534a7b5419da0c8f62bd735b
+      internalID: 8547757857167582772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hadiah 20 Buah Bolak-balik_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1133
+        width: 653
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63152fc0a8e6c4448ba1193f6c3a7a77
+      internalID: -7600366021696445676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hadiah 20 Buah Bolak-balik_11
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 1133
+        width: 655
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6297150a7062504d83e76758a29cfa2
+      internalID: 6733365739796801869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hadiah 20 Buah Bolak-balik_12
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 1133
         width: 656
         height: 985
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90212825a0ea4e345b803bcdeab4acce
-      internalID: 3130621030916574681
+      spriteID: 6a3e78fe5191931459852fd2f49cc5c5
+      internalID: -8694529348413746766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Easy 11
+      name: Kartu Hadiah 20 Buah Bolak-balik_13
       rect:
         serializedVersion: 2
-        x: 2796
-        y: 1097
+        x: 2575
+        y: 1133
         width: 656
         height: 985
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3a273459ea7974418e6e948a625ca1b
-      internalID: -2841627503849125184
+      spriteID: e4d9b8f7b6e60c1429b395edcf80b9de
+      internalID: 4847536577944632085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Easy 20
+      name: Kartu Hadiah 20 Buah Bolak-balik_14
       rect:
         serializedVersion: 2
-        x: 60
-        y: 69
-        width: 652
+        x: 3389
+        y: 1133
+        width: 653
         height: 985
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73bda0f07b342cf408218436f8ed81e6
-      internalID: 8974343256860414291
+      spriteID: 73ac9d27035dca349b38894943516587
+      internalID: -6418405064685169148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Easy 19
+      name: Kartu Hadiah 20 Buah Bolak-balik_15
       rect:
         serializedVersion: 2
-        x: 742
-        y: 69
+        x: 0
+        y: 0
+        width: 653
+        height: 984
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8722100e55d245a46b07bc5b0a5c9452
+      internalID: 409852646522577172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hadiah 20 Buah Bolak-balik_16
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 0
         width: 656
-        height: 985
+        height: 984
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bb65b2a0b3ac2c46b8e89d45a9ecd79
-      internalID: 5333469861100253218
+      spriteID: 3184afbf3c5584a478ca315909399437
+      internalID: -4839571768257548990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Easy 18
+      name: Kartu Hadiah 20 Buah Bolak-balik_17
       rect:
         serializedVersion: 2
-        x: 1426
-        y: 69
+        x: 1715
+        y: 0
         width: 656
-        height: 985
+        height: 984
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d70a06b2fc3fe249a59b18cf8d533dd
-      internalID: -5302778319675310
+      spriteID: 71758042080ec3744bde54ea0f3eedf5
+      internalID: 4005144448838593029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Easy 17
+      name: Kartu Hadiah 20 Buah Bolak-balik_18
       rect:
         serializedVersion: 2
-        x: 2112
-        y: 69
+        x: 2575
+        y: 0
         width: 656
-        height: 985
+        height: 984
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f954e59166a3f849b77566828b337d1
-      internalID: 2185492121101033841
+      spriteID: 54853adf3a4061d479265d879e5f19d8
+      internalID: -7226788645965956703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Easy 16
+      name: Kartu Hadiah 20 Buah Bolak-balik_19
       rect:
         serializedVersion: 2
-        x: 2796
-        y: 69
-        width: 656
-        height: 985
+        x: 3389
+        y: 0
+        width: 653
+        height: 984
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0f8ce0f5d7a3e147804403ca009298e
-      internalID: 9216504849490794471
+      spriteID: 04e3c1b2e6ed0a64f95720cdeee50c1d
+      internalID: 8707055198817813758
       vertices: []
       indices: 
       edges: []

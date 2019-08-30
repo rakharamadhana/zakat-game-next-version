@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class QuestionCardScript : MonoBehaviour
+public class RewardCardScript : MonoBehaviour
 {
 
     public Sprite[] cards;
@@ -15,8 +15,13 @@ public class QuestionCardScript : MonoBehaviour
     {
         whosTurn = 1;
         rend = GetComponent<SpriteRenderer>();
-        cards = Resources.LoadAll<Sprite>("Cards/Easy/Question");
+        cards = Resources.LoadAll<Sprite>("Cards/Reward");
         rend.sprite = cards[0];
+    }
+
+    public void OnMouseDown()
+    {
+        RollCard();
     }
 
     public void RollCard()
