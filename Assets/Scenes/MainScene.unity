@@ -3859,6 +3859,16 @@ MonoBehaviour:
   questionCard: {fileID: 1876608170}
   rewardCard: {fileID: 33270817}
   punishmentCard: {fileID: 0}
+  questionWaypoints: 0200000005000000090000000a0000000b0000000e0000001000000011000000130000001500000017000000180000001c0000001f000000210000002400000026000000270000002a0000002c0000002d0000002f000000
+  rewardWaypoints: 0100000004000000070000000c000000120000001b0000001e0000002300000029000000
+  punishmentWaypoints: 03000000080000000f000000160000001a0000001d00000020000000250000002b00000030000000
+  LadderSFX: {fileID: 8300000, guid: f8b332255e432466bbea7faf598190d0, type: 3}
+  WinningSFX: {fileID: 8300000, guid: ec9b4fde9150a2d4ea3ff914912e40fa, type: 3}
+  SnakeSFX: {fileID: 8300000, guid: b308e7c3c46a4481193a230a3668bee3, type: 3}
+  RewardSFX: {fileID: 8300000, guid: 15b313b241ff5b24cbac3c10541fee22, type: 3}
+  QuestionSFX: {fileID: 8300000, guid: 06f6c89f2fe579b4f83c583b8be6db48, type: 3}
+  PunishmentSFX: {fileID: 8300000, guid: 2bcd914dcfa62074fb9a66bbbdc0c719, type: 3}
+  audioSource: {fileID: 1119877105}
   pointerMoveSpeed: 100
 --- !u!4 &874268003
 Transform:
@@ -4727,10 +4737,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_PlayOnAwake: 0
+  m_Volume: 0.7
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4819,12 +4829,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119877104}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8030093, y: 0.37609845, z: -9.934106}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.5535166, y: 1.4647181, z: -9.032479}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 1166434209}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1125692024
 GameObject:
@@ -4986,6 +4996,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1166434208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1166434209}
+  m_Layer: 0
+  m_Name: Sounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1166434209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166434208}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.7505074, y: -1.0886197, z: -0.9016266}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1119877106}
+  - {fileID: 1454780631}
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1173629734
 GameObject:
   m_ObjectHideFlags: 0
@@ -5208,7 +5250,7 @@ Transform:
   m_LocalScale: {x: 1.3806735, y: 1.3806735, z: 1.3806735}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.00001}
 --- !u!1 &1245293654
 GameObject:
@@ -6165,7 +6207,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d941cc1ac22b21941a08918bd8a9893e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6256,12 +6298,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1454780629}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.84, y: 2.16, z: -0.7441406}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.089493, y: 3.2486198, z: 0.15748596}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 1166434209}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1467681896
 GameObject:

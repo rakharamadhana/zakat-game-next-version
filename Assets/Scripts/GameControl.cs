@@ -8,6 +8,12 @@ public class GameControl : MonoBehaviour {
 
     public GameObject exitPanel, menuPanel, questionCard, rewardCard, punishmentCard;
 
+    public List<int> questionWaypoints, rewardWaypoints, punishmentWaypoints = new List<int>();
+
+    public AudioClip LadderSFX, WinningSFX, SnakeSFX, RewardSFX, QuestionSFX, PunishmentSFX;
+
+    public AudioSource audioSource;
+
     private static GameObject winning, whoWinsTextShadow, pointer;
 
     private static GameObject player1, player2, player3, player4;
@@ -88,11 +94,12 @@ public class GameControl : MonoBehaviour {
             {
                 exitPanel.SetActive(true);
             }
-            else
+            else 
             {
                 menuPanel.SetActive(true);
             }
         }
+
         if(Dice.whosTurn == 1) {
             //Debug.Log("Player 1");
             pointer.transform.position = Vector2.MoveTowards(
@@ -125,59 +132,87 @@ public class GameControl : MonoBehaviour {
         if (player1.GetComponent<FollowThePath>().waypointIndex > 
             player1StartWaypoint + diceSideThrown)
         {
-            // Tangga
-            if (player1StartWaypoint + diceSideThrown == 6)
+            if(questionWaypoints.Contains(player1StartWaypoint + diceSideThrown))
             {
-                player1.GetComponent<FollowThePath>().transform.position = Vector2.MoveTowards(player1.GetComponent<FollowThePath>().transform.position, player1.GetComponent<FollowThePath>().waypoints[45].transform.position, Time.deltaTime);
-                player1.GetComponent<FollowThePath>().waypointIndex = 45;
-                player1.GetComponent<FollowThePath>().waypointIndex += 1;
-                MovePlayer(1);
+                audioSource.clip = QuestionSFX;
+                audioSource.Play();
+                Debug.Log("Question!");
             }
-            if (player1StartWaypoint + diceSideThrown == 13)
+            else if (rewardWaypoints.Contains(player1StartWaypoint + diceSideThrown))
             {
-                player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[41].transform.position;
-                player1.GetComponent<FollowThePath>().waypointIndex = 41;
-                player1.GetComponent<FollowThePath>().waypointIndex += 1;
-                MovePlayer(1);
+                audioSource.clip = RewardSFX;
+                audioSource.Play();
+                Debug.Log("Reward!");
             }
-            if (player1StartWaypoint + diceSideThrown == 20)
+            else if (punishmentWaypoints.Contains(player1StartWaypoint+ diceSideThrown))
             {
-                player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[35].transform.position;
-                player1.GetComponent<FollowThePath>().waypointIndex = 35;
-                player1.GetComponent<FollowThePath>().waypointIndex += 1;
-                MovePlayer(1);
+                audioSource.clip = PunishmentSFX;
+                audioSource.Play();
+                Debug.Log("Punishment!");
             }
-            if (player1StartWaypoint + diceSideThrown == 25)
+            else
             {
-                player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[32].transform.position;
-                player1.GetComponent<FollowThePath>().waypointIndex = 32;
-                player1.GetComponent<FollowThePath>().waypointIndex += 1;
-                MovePlayer(1);
-            }
+                // Tangga
+                if (player1StartWaypoint + diceSideThrown == 6)
+                {
+                    audioSource.PlayOneShot(LadderSFX);
+                    player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[45].transform.position;
+                    player1.GetComponent<FollowThePath>().waypointIndex = 45;
+                    player1.GetComponent<FollowThePath>().waypointIndex += 1;
+                    MovePlayer(1);
+                }
+                if (player1StartWaypoint + diceSideThrown == 13)
+                {
+                    audioSource.PlayOneShot(LadderSFX);
+                    player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[41].transform.position;
+                    player1.GetComponent<FollowThePath>().waypointIndex = 41;
+                    player1.GetComponent<FollowThePath>().waypointIndex += 1;
+                    MovePlayer(1);
+                }
+                if (player1StartWaypoint + diceSideThrown == 20)
+                {
+                    audioSource.PlayOneShot(LadderSFX);
+                    player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[35].transform.position;
+                    player1.GetComponent<FollowThePath>().waypointIndex = 35;
+                    player1.GetComponent<FollowThePath>().waypointIndex += 1;
+                    MovePlayer(1);
+                }
+                if (player1StartWaypoint + diceSideThrown == 25)
+                {
+                    audioSource.PlayOneShot(LadderSFX);
+                    player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[32].transform.position;
+                    player1.GetComponent<FollowThePath>().waypointIndex = 32;
+                    player1.GetComponent<FollowThePath>().waypointIndex += 1;
+                    MovePlayer(1);
+                }
 
-            // Ular
-            if (player1StartWaypoint + diceSideThrown == 34)
-            {
-                player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[22].transform.position;
-                player1.GetComponent<FollowThePath>().waypointIndex = 22;
-                player1.GetComponent<FollowThePath>().waypointIndex += 1;
-                MovePlayer(1);
+                // Ular
+                if (player1StartWaypoint + diceSideThrown == 34)
+                {
+                    audioSource.PlayOneShot(SnakeSFX);
+                    player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[22].transform.position;
+                    player1.GetComponent<FollowThePath>().waypointIndex = 22;
+                    player1.GetComponent<FollowThePath>().waypointIndex += 1;
+                    MovePlayer(1);
+                }
+                if (player1StartWaypoint + diceSideThrown == 40)
+                {
+                    audioSource.PlayOneShot(SnakeSFX);
+                    player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[15].transform.position;
+                    player1.GetComponent<FollowThePath>().waypointIndex = 15;
+                    player1.GetComponent<FollowThePath>().waypointIndex += 1;
+                    MovePlayer(1);
+                }
+                if (player1StartWaypoint + diceSideThrown == 46)
+                {
+                    audioSource.PlayOneShot(SnakeSFX);
+                    player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[3].transform.position;
+                    player1.GetComponent<FollowThePath>().waypointIndex = 3;
+                    player1.GetComponent<FollowThePath>().waypointIndex += 1;
+                    MovePlayer(1);
+                }
             }
-            if (player1StartWaypoint + diceSideThrown == 40)
-            {
-                player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[15].transform.position;
-                player1.GetComponent<FollowThePath>().waypointIndex = 15;
-                player1.GetComponent<FollowThePath>().waypointIndex += 1;
-                MovePlayer(1);
-            }
-            if (player1StartWaypoint + diceSideThrown == 46)
-            {
-                player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[3].transform.position;
-                player1.GetComponent<FollowThePath>().waypointIndex = 3;
-                player1.GetComponent<FollowThePath>().waypointIndex += 1;
-                MovePlayer(1);
-            }
-
+            
             player1.GetComponent<FollowThePath>().moveAllowed = false;            
             player1StartWaypoint = player1.GetComponent<FollowThePath>().waypointIndex - 1;
         }
@@ -366,7 +401,8 @@ public class GameControl : MonoBehaviour {
         }
 
 
-        if (player1.GetComponent<FollowThePath>().waypointIndex >= 
+        //Winnings
+        if (player1.GetComponent<FollowThePath>().waypointIndex == 
             player1.GetComponent<FollowThePath>().waypoints.Count)
         {
             winning.gameObject.SetActive(true);
@@ -374,16 +410,15 @@ public class GameControl : MonoBehaviour {
             whoWinsTextShadow.GetComponent<Text>().text = "Player 1 Wins";
             gameOver = true;
         }
-
-        if (player2.GetComponent<FollowThePath>().waypointIndex >=
+        if (player2.GetComponent<FollowThePath>().waypointIndex ==
             player2.GetComponent<FollowThePath>().waypoints.Count)
         {
             winning.gameObject.SetActive(true);
             whoWinsTextShadow.gameObject.SetActive(true);
-            whoWinsTextShadow.GetComponent<Text>().text = "Player 2 Wins";
+            whoWinsTextShadow.GetComponent<Text>().text = "Player 2 Wins";            
             gameOver = true;
         }
-        if (player3.GetComponent<FollowThePath>().waypointIndex >=
+        if (player3.GetComponent<FollowThePath>().waypointIndex ==
             player3.GetComponent<FollowThePath>().waypoints.Count)
         {
             winning.gameObject.SetActive(true);
@@ -391,7 +426,7 @@ public class GameControl : MonoBehaviour {
             whoWinsTextShadow.GetComponent<Text>().text = "Player 3 Wins";
             gameOver = true;
         }
-        if (player4.GetComponent<FollowThePath>().waypointIndex >=
+        if (player4.GetComponent<FollowThePath>().waypointIndex ==
             player4.GetComponent<FollowThePath>().waypoints.Count)
         {
             winning.gameObject.SetActive(true);
