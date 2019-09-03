@@ -14,6 +14,10 @@ public class GameControl : MonoBehaviour {
 
     public AudioSource audioSource;
 
+    //public QuestionCardScript QuestionCard;
+    //public RewardCardScript RewardCard;
+    //public PunishmentCardScript PunishmentCardScript;
+
     private static GameObject winning, whoWinsTextShadow, pointer;
 
     private static GameObject player1, player2, player3, player4;
@@ -35,6 +39,9 @@ public class GameControl : MonoBehaviour {
     void Start () {
 
         Screen.orientation = ScreenOrientation.Portrait;
+
+        questionCard.SetActive(false);
+        rewardCard.SetActive(false);
 
         diceSideThrown = 0;
         player1StartWaypoint = 0;
@@ -134,12 +141,16 @@ public class GameControl : MonoBehaviour {
         {
             if(questionWaypoints.Contains(player1StartWaypoint + diceSideThrown))
             {
+                questionCard.SetActive(true);
+                questionCard.GetComponent<QuestionCardScript>().RollCard();
                 audioSource.clip = QuestionSFX;
                 audioSource.Play();
                 Debug.Log("Question!");
             }
             else if (rewardWaypoints.Contains(player1StartWaypoint + diceSideThrown))
             {
+                rewardCard.SetActive(true);
+                rewardCard.GetComponent<RewardCardScript>().RollCard();
                 audioSource.clip = RewardSFX;
                 audioSource.Play();
                 Debug.Log("Reward!");

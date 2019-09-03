@@ -21,30 +21,31 @@ public class RewardCardScript : MonoBehaviour
 
     public void OnMouseDown()
     {
-        RollCard();
+        gameObject.SetActive(false);
+        Debug.Log("Reward Given");
     }
 
     public void RollCard()
     {
-        if (!GameControl.gameOver && coroutineAllowed)
-            StartCoroutine("RollTheCard");
+        if (!GameControl.gameOver) RollTheCard();
         GetComponent<AudioSource>().Play();
     }
 
-    private IEnumerator RollTheCard()
+    private void RollTheCard()
     {
-        coroutineAllowed = false;
+        //coroutineAllowed = false;
         int randomCardSide = 0;
         for (int i = 0; i <= 40; i++)
         {
             randomCardSide = Random.Range(0, 19);
+            Debug.Log("=> " + randomCardSide);
             rend.sprite = cards[randomCardSide];
-            yield return new WaitForSeconds(0.01f);
+            //yield return new WaitForSeconds(0.01f);
         }
 
         Debug.Log("Card No." + (randomCardSide + 1));
 
-        coroutineAllowed = true;
+        //coroutineAllowed = true;
 
     }
 }
