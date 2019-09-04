@@ -62,6 +62,66 @@ TextureImporter:
   - first:
       213: 8707055198817813758
     second: Kartu Hadiah 20 Buah Bolak-balik_19
+  - first:
+      213: -5703286394577583511
+    second: Kartu Hadiah_0
+  - first:
+      213: -6213705917421123533
+    second: Kartu Hadiah_1
+  - first:
+      213: -1355315183805955507
+    second: Kartu Hadiah_2
+  - first:
+      213: -8785855951359645746
+    second: Kartu Hadiah_3
+  - first:
+      213: 8163839963355610699
+    second: Kartu Hadiah_4
+  - first:
+      213: 3935049051021189951
+    second: Kartu Hadiah_5
+  - first:
+      213: -61911540084152489
+    second: Kartu Hadiah_6
+  - first:
+      213: 5397136482776282108
+    second: Kartu Hadiah_7
+  - first:
+      213: -3155178017354492510
+    second: Kartu Hadiah_8
+  - first:
+      213: 4083098570481063595
+    second: Kartu Hadiah_9
+  - first:
+      213: 73995041303854183
+    second: Kartu Hadiah_10
+  - first:
+      213: -1957052030836806946
+    second: Kartu Hadiah_11
+  - first:
+      213: 7422916987298782513
+    second: Kartu Hadiah_12
+  - first:
+      213: -1929471563983967558
+    second: Kartu Hadiah_13
+  - first:
+      213: 2231726646710166189
+    second: Kartu Hadiah_14
+  - first:
+      213: -8329640821569739359
+    second: Kartu Hadiah_15
+  - first:
+      213: -6661184355869381628
+    second: Kartu Hadiah_16
+  - first:
+      213: 3542804549680707215
+    second: Kartu Hadiah_17
+  - first:
+      213: 2172638934944150071
+    second: Kartu Hadiah_18
+  - first:
+      213: -3920617942606240897
+    second: Kartu Hadiah_19
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -158,13 +218,34 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_0
+      name: Kartu Hadiah_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 3365
+        y: 3366
+        width: 652
+        height: 983
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30696a0c9e992d46a2905641f41fce5
+      internalID: -5703286394577583511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hadiah_1
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 3366
         width: 653
-        height: 984
+        height: 983
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,83 +253,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cf1936293fcd5147a70a89eb5bdd6c5
-      internalID: 6644016827849378274
+      spriteID: 5d36198ce654f424ea55938c1f1928fa
+      internalID: -6213705917421123533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_1
+      name: Kartu Hadiah_2
       rect:
         serializedVersion: 2
-        x: 847
-        y: 3365
-        width: 656
-        height: 984
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bcdd095e152b4c84c971e07c5c730723
-      internalID: -4142206937265490244
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_2
-      rect:
-        serializedVersion: 2
-        x: 1715
-        y: 3365
-        width: 656
-        height: 984
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5efbbd27b4bbe1a4bb0f3e5dfdbc52ca
-      internalID: -811506608217775067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_3
-      rect:
-        serializedVersion: 2
-        x: 2575
-        y: 3365
-        width: 656
-        height: 984
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efdf09821d3ab6846ae44bf1f6f5aec9
-      internalID: 560546946940519182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_4
-      rect:
-        serializedVersion: 2
-        x: 3389
-        y: 3365
+        x: 1717
+        y: 3366
         width: 653
-        height: 984
+        height: 983
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,20 +274,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 904063a977c07214cb13160e69130c51
-      internalID: 5285332563288248222
+      spriteID: eab309d7ac044a34e85edfedda1b40f5
+      internalID: -1355315183805955507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_5
+      name: Kartu Hadiah_3
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 3366
+        width: 653
+        height: 983
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1768158c50e295448bf50ba8715bc83e
+      internalID: -8785855951359645746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hadiah_4
+      rect:
+        serializedVersion: 2
+        x: 3391
+        y: 3366
+        width: 651
+        height: 983
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36050d28b07daf544bfe77ace793790f
+      internalID: 8163839963355610699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hadiah_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 2244
+        y: 2245
+        width: 652
+        height: 983
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063271f3a99cc2b4a883fb798a81af05
+      internalID: 3935049051021189951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hadiah_6
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 2245
         width: 653
-        height: 985
+        height: 983
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,83 +358,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 333bc0f45dbede34b96bbc6818a71cfe
-      internalID: 1260682306760826910
+      spriteID: 098b7a7cf5306e5489cd95bb29541e37
+      internalID: -61911540084152489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_6
+      name: Kartu Hadiah_7
       rect:
         serializedVersion: 2
-        x: 848
-        y: 2244
-        width: 655
-        height: 985
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85dbb54424c953345ab72e5b5b069628
-      internalID: 2230967088775753105
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_7
-      rect:
-        serializedVersion: 2
-        x: 1715
-        y: 2244
-        width: 656
-        height: 985
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7ca6c1190b11394aba535e88a9a4e63
-      internalID: 5735602386201764268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_8
-      rect:
-        serializedVersion: 2
-        x: 2575
-        y: 2244
-        width: 656
-        height: 985
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b3791cf386cc9bd41a393b56fb571fb6
-      internalID: 5615905246644076087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_9
-      rect:
-        serializedVersion: 2
-        x: 3389
-        y: 2244
+        x: 1717
+        y: 2245
         width: 653
-        height: 985
+        height: 983
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -361,19 +379,61 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9eeb4707534a7b5419da0c8f62bd735b
-      internalID: 8547757857167582772
+      spriteID: 0c8c7755b2f3cfa4da4d1ec03377d818
+      internalID: 5397136482776282108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_10
+      name: Kartu Hadiah_8
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 2245
+        width: 653
+        height: 983
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5841b25df9891a44ba244007192809ed
+      internalID: -3155178017354492510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hadiah_9
+      rect:
+        serializedVersion: 2
+        x: 3391
+        y: 2245
+        width: 651
+        height: 983
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318134b77e2e89945b0a7d27a2fba756
+      internalID: 4083098570481063595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hadiah_10
       rect:
         serializedVersion: 2
         x: 0
         y: 1133
-        width: 653
+        width: 652
         height: 985
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -382,80 +442,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63152fc0a8e6c4448ba1193f6c3a7a77
-      internalID: -7600366021696445676
+      spriteID: 4e05d5e2816e3474d8acef461dc043f3
+      internalID: 73995041303854183
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_11
+      name: Kartu Hadiah_11
       rect:
         serializedVersion: 2
-        x: 848
-        y: 1133
-        width: 655
-        height: 985
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6297150a7062504d83e76758a29cfa2
-      internalID: 6733365739796801869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_12
-      rect:
-        serializedVersion: 2
-        x: 1715
-        y: 1133
-        width: 656
-        height: 985
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a3e78fe5191931459852fd2f49cc5c5
-      internalID: -8694529348413746766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_13
-      rect:
-        serializedVersion: 2
-        x: 2575
-        y: 1133
-        width: 656
-        height: 985
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4d9b8f7b6e60c1429b395edcf80b9de
-      internalID: 4847536577944632085
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_14
-      rect:
-        serializedVersion: 2
-        x: 3389
+        x: 849
         y: 1133
         width: 653
         height: 985
@@ -466,20 +463,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73ac9d27035dca349b38894943516587
-      internalID: -6418405064685169148
+      spriteID: bdd3aae6bacfcf04892b8d856534b6bc
+      internalID: -1957052030836806946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_15
+      name: Kartu Hadiah_12
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 1133
+        width: 653
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0627b8c6715834e920c98b74ec2987
+      internalID: 7422916987298782513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hadiah_13
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 1133
+        width: 653
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569bbd881cf843c4aa308933cfebb256
+      internalID: -1929471563983967558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hadiah_14
+      rect:
+        serializedVersion: 2
+        x: 3391
+        y: 1133
+        width: 651
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a0b4edb0298f74687e392d4bddae03
+      internalID: 2231726646710166189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hadiah_15
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 653
-        height: 984
+        width: 651
+        height: 983
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -487,20 +547,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8722100e55d245a46b07bc5b0a5c9452
-      internalID: 409852646522577172
+      spriteID: e150dfbfb12aa9e4cb2e6b1580f5c0fd
+      internalID: -8329640821569739359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_16
+      name: Kartu Hadiah_16
       rect:
         serializedVersion: 2
-        x: 847
+        x: 849
         y: 0
-        width: 656
-        height: 984
+        width: 652
+        height: 983
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -508,62 +568,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3184afbf3c5584a478ca315909399437
-      internalID: -4839571768257548990
+      spriteID: c36f3ba3668112b46bbe36c5d7588a4b
+      internalID: -6661184355869381628
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_17
+      name: Kartu Hadiah_17
       rect:
         serializedVersion: 2
-        x: 1715
-        y: 0
-        width: 656
-        height: 984
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71758042080ec3744bde54ea0f3eedf5
-      internalID: 4005144448838593029
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_18
-      rect:
-        serializedVersion: 2
-        x: 2575
-        y: 0
-        width: 656
-        height: 984
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54853adf3a4061d479265d879e5f19d8
-      internalID: -7226788645965956703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kartu Hadiah 20 Buah Bolak-balik_19
-      rect:
-        serializedVersion: 2
-        x: 3389
+        x: 1716
         y: 0
         width: 653
-        height: 984
+        height: 983
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -571,8 +589,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04e3c1b2e6ed0a64f95720cdeee50c1d
-      internalID: 8707055198817813758
+      spriteID: 0b25176e708b45a47a23cf4dacec56ce
+      internalID: 3542804549680707215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hadiah_18
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 0
+        width: 653
+        height: 983
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1269930f6fd03e148ae3347e64add432
+      internalID: 2172638934944150071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hadiah_19
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 0
+        width: 652
+        height: 983
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e040866e64b3c4796d06a7b24b23c0
+      internalID: -3920617942606240897
       vertices: []
       indices: 
       edges: []

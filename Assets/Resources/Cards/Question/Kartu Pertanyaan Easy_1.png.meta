@@ -1,67 +1,67 @@
 fileFormatVersion: 2
-guid: 6f0ebe6c69c489a4493c4d770c8af66c
+guid: f11dcd2c9fd43ce43a4614a742f2834a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8664692088512601168
-    second: Level Easy 5
+      213: 5029329265497672582
+    second: Kartu Pertanyaan Easy_1_0
   - first:
-      213: -6444362580943636572
-    second: Level Easy 4
+      213: 2925996328376928197
+    second: Kartu Pertanyaan Easy_1_1
   - first:
-      213: -2574259843758604272
-    second: Level Easy 3
+      213: 8477320523427784736
+    second: Kartu Pertanyaan Easy_1_2
   - first:
-      213: -4838824009478020283
-    second: Level Easy 2
+      213: 2873820714928651633
+    second: Kartu Pertanyaan Easy_1_3
   - first:
-      213: -4785800141996823746
-    second: Level Easy 1
+      213: -6940085087587549515
+    second: Kartu Pertanyaan Easy_1_4
   - first:
-      213: -3821605582973720692
-    second: Level Easy 10
+      213: 4628188335010698213
+    second: Kartu Pertanyaan Easy_1_5
   - first:
-      213: 5290895589495989065
-    second: Level Easy 9
+      213: -507651353019577342
+    second: Kartu Pertanyaan Easy_1_6
   - first:
-      213: 1584041373640953705
-    second: Level Easy 8
+      213: 8098449934406310522
+    second: Kartu Pertanyaan Easy_1_7
   - first:
-      213: 3910109743913190854
-    second: Level Easy 7
+      213: -2669469930942221060
+    second: Kartu Pertanyaan Easy_1_8
   - first:
-      213: -2743167619744794405
-    second: Level Easy 6
+      213: -1298103767499470838
+    second: Kartu Pertanyaan Easy_1_9
   - first:
-      213: 3029386464167372237
-    second: Level Easy 15
+      213: 8536917056576225096
+    second: Kartu Pertanyaan Easy_1_10
   - first:
-      213: -7853344499231624188
-    second: Level Easy 14
+      213: -13756496356788730
+    second: Kartu Pertanyaan Easy_1_11
   - first:
-      213: 6839334407724941090
-    second: Level Easy 13
+      213: -2105149374488976136
+    second: Kartu Pertanyaan Easy_1_12
   - first:
-      213: 3130621030916574681
-    second: Level Easy 12
+      213: -7616629537560131167
+    second: Kartu Pertanyaan Easy_1_13
   - first:
-      213: -2841627503849125184
-    second: Level Easy 11
+      213: -2734633397980313999
+    second: Kartu Pertanyaan Easy_1_14
   - first:
-      213: 8974343256860414291
-    second: Level Easy 20
+      213: 66625461811681824
+    second: Kartu Pertanyaan Easy_1_15
   - first:
-      213: 5333469861100253218
-    second: Level Easy 19
+      213: -4531836195501459338
+    second: Kartu Pertanyaan Easy_1_16
   - first:
-      213: -5302778319675310
-    second: Level Easy 18
+      213: -4904553535425908411
+    second: Kartu Pertanyaan Easy_1_17
   - first:
-      213: 2185492121101033841
-    second: Level Easy 17
+      213: 59712307471035396
+    second: Kartu Pertanyaan Easy_1_18
   - first:
-      213: 9216504849490794471
-    second: Level Easy 16
+      213: -2454555121177776300
+    second: Kartu Pertanyaan Easy_1_19
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -120,7 +120,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -132,7 +132,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -144,7 +144,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -158,421 +158,421 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Level Easy 5
+      name: Kartu Pertanyaan Easy_1_0
       rect:
         serializedVersion: 2
-        x: 56
-        y: 3151
+        x: 154
+        y: 3683
+        width: 656
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba84214a4e56df74392ac64cc5ae5981
+      internalID: 5029329265497672582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan Easy_1_1
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 3683
+        width: 657
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2422b2422499aef4c99a56009f780278
+      internalID: 2925996328376928197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan Easy_1_2
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 3683
+        width: 657
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54237c6b66127a441a3c03443707941e
+      internalID: 8477320523427784736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan Easy_1_3
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 3683
+        width: 655
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d488dcb3e72184c92819891e6d1175
+      internalID: 2873820714928651633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan Easy_1_4
+      rect:
+        serializedVersion: 2
+        x: 2893
+        y: 3683
+        width: 658
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a781e54d2b83ec8489d5fcc7e4306e53
+      internalID: -6940085087587549515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan Easy_1_5
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 2523
+        width: 656
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4582425319959bf499499aaf43ec2f56
+      internalID: 4628188335010698213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan Easy_1_6
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 2523
+        width: 657
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba1106cca041f849b9886dfe2511c6a
+      internalID: -507651353019577342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan Easy_1_7
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 2523
+        width: 657
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c4bf8fc0264534a99bb5b7826e6bfd
+      internalID: 8098449934406310522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan Easy_1_8
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 2523
+        width: 655
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86078f214be16224f80945519dd7e280
+      internalID: -2669469930942221060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan Easy_1_9
+      rect:
+        serializedVersion: 2
+        x: 2893
+        y: 2523
+        width: 658
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f1aa3411ad3724e94c1db8cb2521f7
+      internalID: -1298103767499470838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan Easy_1_10
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1375
+        width: 656
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b0a008a00cb9a46ae673789f6191c4
+      internalID: 8536917056576225096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan Easy_1_11
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1375
+        width: 655
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f624fc7b70e5c014483f4f8965bfa604
+      internalID: -13756496356788730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan Easy_1_12
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 1375
+        width: 657
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4eb28dcf09a68846baa1229f6abaa05
+      internalID: -2105149374488976136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan Easy_1_13
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 1375
+        width: 657
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ccf335f13ed76c4188500fc190d390c
+      internalID: -7616629537560131167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan Easy_1_14
+      rect:
+        serializedVersion: 2
+        x: 2895
+        y: 1375
+        width: 656
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a820e65cc006842a2810ac59cbba50
+      internalID: -2734633397980313999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan Easy_1_15
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 221
         width: 656
         height: 987
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dea5d61aa887fb04fbbb2e8bb8ce947e
-      internalID: 8664692088512601168
+      spriteID: d99fb0ab5a5468b479d22b7ada4bbfe5
+      internalID: 66625461811681824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Easy 4
+      name: Kartu Pertanyaan Easy_1_16
       rect:
         serializedVersion: 2
-        x: 740
-        y: 3151
+        x: 840
+        y: 221
+        width: 655
+        height: 987
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6229aec8548c5f4ba8954c3de23318c
+      internalID: -4531836195501459338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan Easy_1_17
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 221
+        width: 657
+        height: 987
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317ba229fb5e374419a264efc6de18db
+      internalID: -4904553535425908411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan Easy_1_18
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 221
+        width: 657
+        height: 987
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679c98e6d24214146abbd9a646d60386
+      internalID: 59712307471035396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan Easy_1_19
+      rect:
+        serializedVersion: 2
+        x: 2895
+        y: 221
         width: 656
         height: 987
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a50ec38ae8890f44b9e8df0a463d170
-      internalID: -6444362580943636572
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 3
-      rect:
-        serializedVersion: 2
-        x: 1426
-        y: 3151
-        width: 656
-        height: 987
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e18a8a9a7a4ca454d8b59cff5de303d9
-      internalID: -2574259843758604272
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 2
-      rect:
-        serializedVersion: 2
-        x: 2110
-        y: 3151
-        width: 656
-        height: 987
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fc9b63dfe545ae45b7a72676509adc3
-      internalID: -4838824009478020283
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 1
-      rect:
-        serializedVersion: 2
-        x: 2791
-        y: 3156
-        width: 656
-        height: 987
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a12106e83b3cc9142a99df4fbc5d541c
-      internalID: -4785800141996823746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 10
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 2123
-        width: 652
-        height: 986
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1bcb23b86fbdeb40922040f6b8ed9b7
-      internalID: -3821605582973720692
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 9
-      rect:
-        serializedVersion: 2
-        x: 740
-        y: 2123
-        width: 656
-        height: 986
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bcc12a2824140a242a42d95c5dcf5aba
-      internalID: 5290895589495989065
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 8
-      rect:
-        serializedVersion: 2
-        x: 1426
-        y: 2123
-        width: 656
-        height: 986
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d875a6bb55723054ba1b55eb22dee445
-      internalID: 1584041373640953705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 7
-      rect:
-        serializedVersion: 2
-        x: 2110
-        y: 2123
-        width: 656
-        height: 986
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc58814e5304323468f601ed43e5847d
-      internalID: 3910109743913190854
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 6
-      rect:
-        serializedVersion: 2
-        x: 2796
-        y: 2123
-        width: 656
-        height: 986
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11cba338bac92874ba61db6c6e6cecf8
-      internalID: -2743167619744794405
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 15
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 1097
-        width: 652
-        height: 985
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1a82a153987916499754212278f4a5f
-      internalID: 3029386464167372237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 14
-      rect:
-        serializedVersion: 2
-        x: 742
-        y: 1097
-        width: 656
-        height: 985
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07accc06714902f48b66f7c5d45af665
-      internalID: -7853344499231624188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 13
-      rect:
-        serializedVersion: 2
-        x: 1426
-        y: 1097
-        width: 656
-        height: 985
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6126de3d6292ceb4886421f5050b4a4a
-      internalID: 6839334407724941090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 12
-      rect:
-        serializedVersion: 2
-        x: 2112
-        y: 1097
-        width: 656
-        height: 985
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90212825a0ea4e345b803bcdeab4acce
-      internalID: 3130621030916574681
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 11
-      rect:
-        serializedVersion: 2
-        x: 2796
-        y: 1097
-        width: 656
-        height: 985
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3a273459ea7974418e6e948a625ca1b
-      internalID: -2841627503849125184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 20
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 69
-        width: 652
-        height: 985
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73bda0f07b342cf408218436f8ed81e6
-      internalID: 8974343256860414291
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 19
-      rect:
-        serializedVersion: 2
-        x: 742
-        y: 69
-        width: 656
-        height: 985
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bb65b2a0b3ac2c46b8e89d45a9ecd79
-      internalID: 5333469861100253218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 18
-      rect:
-        serializedVersion: 2
-        x: 1426
-        y: 69
-        width: 656
-        height: 985
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d70a06b2fc3fe249a59b18cf8d533dd
-      internalID: -5302778319675310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 17
-      rect:
-        serializedVersion: 2
-        x: 2112
-        y: 69
-        width: 656
-        height: 985
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f954e59166a3f849b77566828b337d1
-      internalID: 2185492121101033841
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Easy 16
-      rect:
-        serializedVersion: 2
-        x: 2796
-        y: 69
-        width: 656
-        height: 985
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0f8ce0f5d7a3e147804403ca009298e
-      internalID: 9216504849490794471
+      spriteID: 1983034991b9b7d40b387fec05dfb4bd
+      internalID: -2454555121177776300
       vertices: []
       indices: 
       edges: []
