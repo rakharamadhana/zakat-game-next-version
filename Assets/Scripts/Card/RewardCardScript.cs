@@ -38,7 +38,7 @@ public class RewardCardScript : MonoBehaviour
         for (int i = 0; i <= 40; i++)
         {
             randomCardSide = Random.Range(0, 19);
-            Debug.Log("=> " + randomCardSide);
+            //Debug.Log("=> " + randomCardSide);
             rend.sprite = cards[randomCardSide];
             //yield return new WaitForSeconds(0.01f);
         }

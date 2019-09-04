@@ -1,0 +1,595 @@
+fileFormatVersion: 2
+guid: 81c13531679643e4997c4773d7c0645f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4742232564470138792
+    second: Kartu Hukuman_0
+  - first:
+      213: -823426438431939412
+    second: Kartu Hukuman_1
+  - first:
+      213: 7053884955795068177
+    second: Kartu Hukuman_2
+  - first:
+      213: 6860791027831448524
+    second: Kartu Hukuman_3
+  - first:
+      213: 4890899212715318901
+    second: Kartu Hukuman_4
+  - first:
+      213: 3718017197341787994
+    second: Kartu Hukuman_5
+  - first:
+      213: 3413365374981111739
+    second: Kartu Hukuman_6
+  - first:
+      213: -5287409804285507169
+    second: Kartu Hukuman_7
+  - first:
+      213: -181572405219437800
+    second: Kartu Hukuman_8
+  - first:
+      213: 7069247889603794927
+    second: Kartu Hukuman_9
+  - first:
+      213: 1153948114936167703
+    second: Kartu Hukuman_10
+  - first:
+      213: 6173040535779247221
+    second: Kartu Hukuman_11
+  - first:
+      213: -3746555643004291653
+    second: Kartu Hukuman_12
+  - first:
+      213: 3225768263855873693
+    second: Kartu Hukuman_13
+  - first:
+      213: -4602116567664567379
+    second: Kartu Hukuman_14
+  - first:
+      213: -6264464940428833641
+    second: Kartu Hukuman_15
+  - first:
+      213: -7646578380031005114
+    second: Kartu Hukuman_16
+  - first:
+      213: -4346501266728709327
+    second: Kartu Hukuman_17
+  - first:
+      213: 1001458260372130468
+    second: Kartu Hukuman_18
+  - first:
+      213: -8720630942487025832
+    second: Kartu Hukuman_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kartu Hukuman_0
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 3779
+        width: 657
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8341723de4854b148924f2f6ecd3308b
+      internalID: -4742232564470138792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_1
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 3779
+        width: 655
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de197f30be0b7254e9dbab3accac67c0
+      internalID: -823426438431939412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_2
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 3779
+        width: 658
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3422fa7971d23354db4bae62922b4975
+      internalID: 7053884955795068177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_3
+      rect:
+        serializedVersion: 2
+        x: 2974
+        y: 3779
+        width: 656
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abee7d171209b704f829995b1eaa55a7
+      internalID: 6860791027831448524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_4
+      rect:
+        serializedVersion: 2
+        x: 3886
+        y: 3779
+        width: 656
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16da31dfe1ad4a0448540cf6e14967ba
+      internalID: 4890899212715318901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_5
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 2629
+        width: 657
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdda594e12427b746ae9aedae61aa8c8
+      internalID: 3718017197341787994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_6
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 2629
+        width: 655
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a29a3f7fcc9d44e88a17a4154a0dc2
+      internalID: 3413365374981111739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_7
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 2629
+        width: 658
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124780c48549169428b03d6ef7cacf8a
+      internalID: -5287409804285507169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_8
+      rect:
+        serializedVersion: 2
+        x: 2974
+        y: 2629
+        width: 656
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7553ec635ff557444a98e123ba025265
+      internalID: -181572405219437800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_9
+      rect:
+        serializedVersion: 2
+        x: 3886
+        y: 2629
+        width: 656
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b7170b49c938a4b8dc4f10eb2a84d7
+      internalID: 7069247889603794927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_10
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1451
+        width: 657
+        height: 986
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5424b45b959d0ff4484385476f32d9af
+      internalID: 1153948114936167703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_11
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 1451
+        width: 655
+        height: 986
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494819827d541574eab8f9ebd6ad3e23
+      internalID: 6173040535779247221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_12
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 1451
+        width: 658
+        height: 986
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ef9aa3786e45a4eaeb52eabe00d4ae
+      internalID: -3746555643004291653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_13
+      rect:
+        serializedVersion: 2
+        x: 2974
+        y: 1451
+        width: 656
+        height: 986
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21eab44445d73f047a9ece6d102e6ac2
+      internalID: 3225768263855873693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_14
+      rect:
+        serializedVersion: 2
+        x: 3886
+        y: 1451
+        width: 656
+        height: 986
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a39b2ad3cef924eaeaf0e5c0623ce1
+      internalID: -4602116567664567379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_15
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 247
+        width: 657
+        height: 987
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c71b399902ff3429ab21cab229195f
+      internalID: -6264464940428833641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_16
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 247
+        width: 655
+        height: 987
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1989b2b704d26438e56e73fc951c2d
+      internalID: -7646578380031005114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_17
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 247
+        width: 658
+        height: 987
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7aa578dce924c47957670b82e68e88
+      internalID: -4346501266728709327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_18
+      rect:
+        serializedVersion: 2
+        x: 2974
+        y: 247
+        width: 656
+        height: 987
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6331630d88ccc354a9548de60fdc661c
+      internalID: 1001458260372130468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Hukuman_19
+      rect:
+        serializedVersion: 2
+        x: 3886
+        y: 247
+        width: 656
+        height: 987
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8ed60fb1aeee3429b30ec1e0c5a81d
+      internalID: -8720630942487025832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

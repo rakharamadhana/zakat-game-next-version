@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class QuestionCardScript : MonoBehaviour
+public class PunishmentCardScript : MonoBehaviour
 {
 
     public Sprite[] cards;
@@ -15,14 +15,14 @@ public class QuestionCardScript : MonoBehaviour
     {
         whosTurn = 1;
         rend = GetComponent<SpriteRenderer>();
-        cards = Resources.LoadAll<Sprite>("Cards/Question");
+        cards = Resources.LoadAll<Sprite>("Cards/Punishment");
         rend.sprite = cards[0];
     }
 
     public void OnMouseDown()
     {
         gameObject.SetActive(false);
-        Debug.Log("Question Answered");
+        Debug.Log("Punishment Given");
     }
 
     public void RollCard()

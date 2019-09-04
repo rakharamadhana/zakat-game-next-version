@@ -14,10 +14,6 @@ public class GameControl : MonoBehaviour {
 
     public AudioSource audioSource;
 
-    //public QuestionCardScript QuestionCard;
-    //public RewardCardScript RewardCard;
-    //public PunishmentCardScript PunishmentCardScript;
-
     private static GameObject winning, whoWinsTextShadow, pointer;
 
     private static GameObject player1, player2, player3, player4;
@@ -42,6 +38,7 @@ public class GameControl : MonoBehaviour {
 
         questionCard.SetActive(false);
         rewardCard.SetActive(false);
+        punishmentCard.SetActive(false);
 
         diceSideThrown = 0;
         player1StartWaypoint = 0;
@@ -157,6 +154,8 @@ public class GameControl : MonoBehaviour {
             }
             else if (punishmentWaypoints.Contains(player1StartWaypoint+ diceSideThrown))
             {
+                punishmentCard.SetActive(true);
+                punishmentCard.GetComponent<PunishmentCardScript>().RollCard();
                 audioSource.clip = PunishmentSFX;
                 audioSource.Play();
                 Debug.Log("Punishment!");
