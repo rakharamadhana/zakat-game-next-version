@@ -6,46 +6,77 @@ public class RewardCardScript : MonoBehaviour
 
     public Sprite[] cards;
     private SpriteRenderer rend;
-    public static int whosTurn = 1;
+    public static int rewardCardNumber;
     private bool coroutineAllowed = true;
 
 
     // Use this for initialization
     private void Start()
     {
-        whosTurn = 1;
         rend = GetComponent<SpriteRenderer>();
         cards = Resources.LoadAll<Sprite>("Cards/Reward");
         rend.sprite = cards[0];
+        gameObject.SetActive(false);
     }
 
     public void OnMouseDown()
     {
         gameObject.SetActive(false);
-        Debug.Log("Reward Given");
+        //Debug.Log("Reward Given");
     }
 
     public void RollCard()
     {
-        if (!GameControl.gameOver) RollTheCard();
+        if (!GameControl.gameOver && coroutineAllowed)
+            StartCoroutine("RollTheCard");
         GetComponent<AudioSource>().Play();
+        GetComponent<BoxCollider2D>().enabled = false;
     }
 
-    private void RollTheCard()
+    private IEnumerator RollTheCard()
     {
-        //coroutineAllowed = false;
+        coroutineAllowed = false;
         int randomCardSide = 0;
-        for (int i = 0; i <= 40; i++)
+        for (int i = 0; i <= 30; i++)
         {
-            randomCardSide = Random.Range(0, 19);
+            randomCardSide = Random.Range(0, 4);
             //Debug.Log("=> " + randomCardSide);
-            rend.sprite = cards[randomCardSide];
-            //yield return new WaitForSeconds(0.01f);
+            gameObject.GetComponent<SpriteRenderer>().sprite = cards[randomCardSide];
+            //rend.sprite = cards[randomCardSide];
+            yield return new WaitForSeconds(0.01f);
         }
 
-        Debug.Log("Card No." + (randomCardSide + 1));
+        rewardCardNumber = randomCardSide;
+        Debug.Log("Card ID => " + rewardCardNumber);
+        Debug.Log("Turn" + Dice.prevTurn);
+        switch (rewardCardNumber)
+        {
+            case 0:
+                StartCoroutine(GameControl.AddPlayerScore(Dice.prevTurn, 400000));
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            case 1:
+                StartCoroutine(GameControl.AddPlayerScore(Dice.prevTurn, 11700000));
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            case 2:
+                StartCoroutine(GameControl.AddPlayerScore(Dice.prevTurn, 750000));
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            case 3:
+                StartCoroutine(GameControl.AddPlayerScore(Dice.prevTurn, 9500000));
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            case 4:
+                StartCoroutine(GameControl.AddPlayerScore(Dice.prevTurn, 4875000));
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            default:
+                break;
+        }
+        
 
-        //coroutineAllowed = true;
+        coroutineAllowed = true;
 
     }
 }

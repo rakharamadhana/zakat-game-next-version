@@ -4,64 +4,64 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 5029329265497672582
-    second: Kartu Pertanyaan Easy_1_0
+    second: Kartu Pertanyaan_0
   - first:
       213: 2925996328376928197
-    second: Kartu Pertanyaan Easy_1_1
+    second: Kartu Pertanyaan_0
   - first:
       213: 8477320523427784736
-    second: Kartu Pertanyaan Easy_1_2
+    second: Kartu Pertanyaan_0
   - first:
       213: 2873820714928651633
-    second: Kartu Pertanyaan Easy_1_3
+    second: Kartu Pertanyaan_0
   - first:
       213: -6940085087587549515
-    second: Kartu Pertanyaan Easy_1_4
+    second: Kartu Pertanyaan_0
   - first:
       213: 4628188335010698213
-    second: Kartu Pertanyaan Easy_1_5
+    second: Kartu Pertanyaan_5
   - first:
       213: -507651353019577342
-    second: Kartu Pertanyaan Easy_1_6
+    second: Kartu Pertanyaan_5
   - first:
       213: 8098449934406310522
-    second: Kartu Pertanyaan Easy_1_7
+    second: Kartu Pertanyaan_5
   - first:
       213: -2669469930942221060
-    second: Kartu Pertanyaan Easy_1_8
+    second: Kartu Pertanyaan_5
   - first:
       213: -1298103767499470838
-    second: Kartu Pertanyaan Easy_1_9
+    second: Kartu Pertanyaan_5
   - first:
       213: 8536917056576225096
-    second: Kartu Pertanyaan Easy_1_10
+    second: Kartu Pertanyaan_10
   - first:
       213: -13756496356788730
-    second: Kartu Pertanyaan Easy_1_11
+    second: Kartu Pertanyaan_10
   - first:
       213: -2105149374488976136
-    second: Kartu Pertanyaan Easy_1_12
+    second: Kartu Pertanyaan_10
   - first:
       213: -7616629537560131167
-    second: Kartu Pertanyaan Easy_1_13
+    second: Kartu Pertanyaan_10
   - first:
       213: -2734633397980313999
-    second: Kartu Pertanyaan Easy_1_14
+    second: Kartu Pertanyaan_10
   - first:
       213: 66625461811681824
-    second: Kartu Pertanyaan Easy_1_15
+    second: Kartu Pertanyaan_15
   - first:
       213: -4531836195501459338
-    second: Kartu Pertanyaan Easy_1_16
+    second: Kartu Pertanyaan_15
   - first:
       213: -4904553535425908411
-    second: Kartu Pertanyaan Easy_1_17
+    second: Kartu Pertanyaan_15
   - first:
       213: 59712307471035396
-    second: Kartu Pertanyaan Easy_1_18
+    second: Kartu Pertanyaan_15
   - first:
       213: -2454555121177776300
-    second: Kartu Pertanyaan Easy_1_19
+    second: Kartu Pertanyaan_15
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -120,7 +120,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -132,7 +132,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -144,7 +144,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -158,7 +158,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_0
+      name: Kartu Pertanyaan_4
       rect:
         serializedVersion: 2
         x: 154
@@ -166,7 +166,7 @@ TextureImporter:
         width: 656
         height: 985
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,7 +179,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_1
+      name: Kartu Pertanyaan_3
       rect:
         serializedVersion: 2
         x: 838
@@ -187,7 +187,7 @@ TextureImporter:
         width: 657
         height: 985
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,7 +200,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_2
+      name: Kartu Pertanyaan_2
       rect:
         serializedVersion: 2
         x: 1524
@@ -208,7 +208,7 @@ TextureImporter:
         width: 657
         height: 985
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -221,7 +221,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_3
+      name: Kartu Pertanyaan_1
       rect:
         serializedVersion: 2
         x: 2210
@@ -229,7 +229,7 @@ TextureImporter:
         width: 655
         height: 985
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,7 +242,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_4
+      name: Kartu Pertanyaan_0
       rect:
         serializedVersion: 2
         x: 2893
@@ -250,7 +250,7 @@ TextureImporter:
         width: 658
         height: 985
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -263,7 +263,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_5
+      name: Kartu Pertanyaan_9
       rect:
         serializedVersion: 2
         x: 154
@@ -271,7 +271,7 @@ TextureImporter:
         width: 656
         height: 988
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -284,7 +284,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_6
+      name: Kartu Pertanyaan_8
       rect:
         serializedVersion: 2
         x: 838
@@ -292,7 +292,7 @@ TextureImporter:
         width: 657
         height: 988
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -305,7 +305,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_7
+      name: Kartu Pertanyaan_7
       rect:
         serializedVersion: 2
         x: 1524
@@ -313,7 +313,7 @@ TextureImporter:
         width: 657
         height: 988
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -326,7 +326,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_8
+      name: Kartu Pertanyaan_6
       rect:
         serializedVersion: 2
         x: 2210
@@ -334,7 +334,7 @@ TextureImporter:
         width: 655
         height: 988
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -347,7 +347,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_9
+      name: Kartu Pertanyaan_5
       rect:
         serializedVersion: 2
         x: 2893
@@ -355,7 +355,7 @@ TextureImporter:
         width: 658
         height: 988
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -368,7 +368,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_10
+      name: Kartu Pertanyaan_14
       rect:
         serializedVersion: 2
         x: 154
@@ -376,7 +376,7 @@ TextureImporter:
         width: 656
         height: 985
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -389,7 +389,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_11
+      name: Kartu Pertanyaan_13
       rect:
         serializedVersion: 2
         x: 840
@@ -397,7 +397,7 @@ TextureImporter:
         width: 655
         height: 985
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -410,7 +410,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_12
+      name: Kartu Pertanyaan_12
       rect:
         serializedVersion: 2
         x: 1524
@@ -418,7 +418,7 @@ TextureImporter:
         width: 657
         height: 985
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -431,7 +431,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_13
+      name: Kartu Pertanyaan_11
       rect:
         serializedVersion: 2
         x: 2210
@@ -439,7 +439,7 @@ TextureImporter:
         width: 657
         height: 985
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -452,7 +452,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_14
+      name: Kartu Pertanyaan_10
       rect:
         serializedVersion: 2
         x: 2895
@@ -460,7 +460,7 @@ TextureImporter:
         width: 656
         height: 985
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -473,15 +473,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_15
+      name: Kartu Pertanyaan_19
       rect:
         serializedVersion: 2
-        x: 154
+        x: 149
         y: 221
         width: 656
         height: 987
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -494,7 +494,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_16
+      name: Kartu Pertanyaan_18
       rect:
         serializedVersion: 2
         x: 840
@@ -502,7 +502,7 @@ TextureImporter:
         width: 655
         height: 987
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -515,7 +515,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_17
+      name: Kartu Pertanyaan_17
       rect:
         serializedVersion: 2
         x: 1524
@@ -523,7 +523,7 @@ TextureImporter:
         width: 657
         height: 987
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -536,15 +536,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_18
+      name: Kartu Pertanyaan_16
       rect:
         serializedVersion: 2
-        x: 2210
-        y: 221
+        x: 2198
+        y: 233
         width: 657
         height: 987
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -557,7 +557,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kartu Pertanyaan Easy_1_19
+      name: Kartu Pertanyaan_15
       rect:
         serializedVersion: 2
         x: 2895
@@ -565,7 +565,7 @@ TextureImporter:
         width: 656
         height: 987
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
