@@ -8,13 +8,14 @@ public class ButtonControl : MonoBehaviour
 {
     public GameObject exitPanel;
     public GameObject menuPanel;
+    public GameObject webView;
 
     private GameObject player1, player2, player3, player4;
     private GameObject playButton;
 
     void Start(){
         menuPanel.SetActive(false);
-        exitPanel.SetActive(false);
+        exitPanel.SetActive(false);        
 
         if (SceneManager.GetActiveScene().name == "Menu")
         {

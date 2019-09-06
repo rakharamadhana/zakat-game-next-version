@@ -47,8 +47,8 @@ public class RewardCardScript : MonoBehaviour
         }
 
         rewardCardNumber = randomCardSide;
-        Debug.Log("Card ID => " + rewardCardNumber);
-        Debug.Log("Turn" + Dice.prevTurn);
+        //Debug.Log("Card ID => " + rewardCardNumber);
+        //Debug.Log("Turn" + Dice.prevTurn);
         switch (rewardCardNumber)
         {
             case 0:

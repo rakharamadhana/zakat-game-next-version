@@ -41,7 +41,7 @@ public class PunishmentCardScript : MonoBehaviour
         int randomCardSide = 0;
         for (int i = 0; i <= 30; i++)
         {
-            randomCardSide = Random.Range(0, 19);
+            randomCardSide = Random.Range(0, 4);
             //Debug.Log("=> " + randomCardSide);
             gameObject.GetComponent<SpriteRenderer>().sprite = cards[randomCardSide];
             //rend.sprite = cards[randomCardSide];
@@ -49,16 +49,32 @@ public class PunishmentCardScript : MonoBehaviour
         }
 
         punishmentCardNumber = randomCardSide;
-        Debug.Log("Card ID => " + punishmentCardNumber);
-        GetComponent<BoxCollider2D>().enabled = true;
-
-        if (punishmentCardNumber == 0)
+        //Debug.Log("Card ID => " + punishmentCardNumber);
+        //Debug.Log("Turn" + Dice.prevTurn);
+        switch (punishmentCardNumber)
         {
-            Debug.Log("Kartu Punishment 1 nih");
-        }
-        else
-        {
-            Debug.Log("Bukan Kartu Punishment 1 nih tapi kartu " + punishmentCardNumber);
+            case 0:
+                StartCoroutine(GameControl.SubtractPlayerScore(Dice.prevTurn, 400000));
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            case 1:
+                StartCoroutine(GameControl.SubtractPlayerScore(Dice.prevTurn, 100000));
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            case 2:
+                GameControl.TransformPlayerPosition(Dice.prevTurn, (GameControl.returnPlayerIndex(Dice.prevTurn) - 3));
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            case 3:
+                GameControl.TransformPlayerPosition(Dice.prevTurn, (GameControl.returnPlayerIndex(Dice.prevTurn) - 2));
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            case 4:
+                GameControl.TransformPlayerPosition(Dice.prevTurn, (GameControl.returnPlayerIndex(Dice.prevTurn) - 1));
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            default:
+                break;
         }
 
         coroutineAllowed = true;

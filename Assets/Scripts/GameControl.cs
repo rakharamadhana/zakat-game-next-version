@@ -13,11 +13,13 @@ public class GameControl : MonoBehaviour {
 
     public List<int> questionWaypoints, rewardWaypoints, punishmentWaypoints = new List<int>();
 
-    public AudioClip LadderSFX, WinningSFX, SnakeSFX, RewardSFX, QuestionSFX, PunishmentSFX;
+    public AudioClip LadderSFX, WinningSFX, SnakeSFX, RewardSFX, QuestionSFX, PunishmentSFX, RightSFX, WrongSFX;
 
     public AudioSource audioSource;
 
     public AudioClip CoinsSFX;
+
+    public static GameObject yesButton, noButton;
 
     private static GameObject winning, whoWinsTextShadow, pointer;
 
@@ -62,6 +64,8 @@ public class GameControl : MonoBehaviour {
         player4Score.text = score4.ToString();
 
         winning = GameObject.Find("Winning");
+        yesButton = GameObject.Find("Yes");
+        noButton = GameObject.Find("No");
         whoWinsTextShadow = GameObject.Find("WhoWinsText");
         pointer = GameObject.Find("Pointer");
 
@@ -81,6 +85,8 @@ public class GameControl : MonoBehaviour {
         player4.GetComponent<FollowThePath>().moveAllowed = false;
 
         winning.gameObject.SetActive(false);
+        yesButton.gameObject.SetActive(false);
+        noButton.gameObject.SetActive(false);
         whoWinsTextShadow.gameObject.SetActive(false);
 
     }
@@ -156,7 +162,9 @@ public class GameControl : MonoBehaviour {
                 questionCard.GetComponent<QuestionCardScript>().RollCard();
                 audioSource.clip = QuestionSFX;
                 audioSource.Play();
-                Debug.Log("Question!");
+                //Debug.Log("Question!");
+                yesButton.gameObject.SetActive(true);
+                noButton.gameObject.SetActive(true);
             }
 
             // Reward
@@ -166,7 +174,7 @@ public class GameControl : MonoBehaviour {
                 rewardCard.GetComponent<RewardCardScript>().RollCard();
                 audioSource.clip = RewardSFX;
                 audioSource.Play();
-                Debug.Log("Reward!");
+                //Debug.Log("Reward!");
             }
 
             // Punishment
@@ -176,7 +184,7 @@ public class GameControl : MonoBehaviour {
                 punishmentCard.GetComponent<PunishmentCardScript>().RollCard();
                 audioSource.clip = PunishmentSFX;
                 audioSource.Play();
-                Debug.Log("Punishment!");
+                //Debug.Log("Punishment!");
             }
 
             // Snake & Ladder
@@ -259,6 +267,8 @@ public class GameControl : MonoBehaviour {
                 audioSource.clip = QuestionSFX;
                 audioSource.Play();
                 Debug.Log("Question!");
+                yesButton.gameObject.SetActive(true);
+                noButton.gameObject.SetActive(true);
             }
 
             // Reward
@@ -361,6 +371,8 @@ public class GameControl : MonoBehaviour {
                 audioSource.clip = QuestionSFX;
                 audioSource.Play();
                 Debug.Log("Question!");
+                yesButton.gameObject.SetActive(true);
+                noButton.gameObject.SetActive(true);
             }
 
             // Reward
@@ -463,6 +475,8 @@ public class GameControl : MonoBehaviour {
                 audioSource.clip = QuestionSFX;
                 audioSource.Play();
                 Debug.Log("Question!");
+                yesButton.gameObject.SetActive(true);
+                noButton.gameObject.SetActive(true);
             }
 
             // Reward
@@ -590,7 +604,7 @@ public class GameControl : MonoBehaviour {
     {
         GameControl gameControl = GameObject.Find("GameControl").GetComponent<GameControl>();
 
-        Debug.Log("Add " + value + " to Player " + player);
+        //Debug.Log("Add " + value + " to Player " + player);
 
         int temp = 0;
 
@@ -752,6 +766,172 @@ public class GameControl : MonoBehaviour {
         temp = 0;
     }
 
+    public static IEnumerator SubtractPlayerScore(int player, int value)
+    {
+        GameControl gameControl = GameObject.Find("GameControl").GetComponent<GameControl>();
+
+        //Debug.Log("Subtract " + value + " for Player " + player);
+
+        int temp = 0;
+
+        switch (player)
+        {
+            case 1:
+                while (temp < value)
+                {
+                    gameControl.audioSource.PlayOneShot(gameControl.CoinsSFX);
+                    if (value <= 1000)
+                    {
+                        temp += 100;
+                        score1 -= 100;
+                    }
+                    else if (value <= 10000)
+                    {
+                        temp += 100;
+                        score1 -= 100;
+                    }
+                    else if (value <= 100000)
+                    {
+                        temp += 1000;
+                        score1 -= 1000;
+                    }
+                    else if (value <= 1000000)
+                    {
+                        temp += 10000;
+                        score1 -= 10000;
+                    }
+                    else if (value <= 10000000)
+                    {
+                        temp += 100000;
+                        score1 -= 100000;
+                    }
+                    else
+                    {
+                        temp += 100000;
+                        score1 -= 100000;
+                    }
+                    player1Score.text = score1.ToString();
+                    yield return new WaitForSeconds(0.01f);
+                }
+                break;
+            case 2:
+                while (temp < value)
+                {
+                    gameControl.audioSource.PlayOneShot(gameControl.CoinsSFX);
+                    if (value <= 1000)
+                    {
+                        temp += 100;
+                        score2 -= 100;
+                    }
+                    else if (value <= 10000)
+                    {
+                        temp += 100;
+                        score2 -= 100;
+                    }
+                    else if (value <= 100000)
+                    {
+                        temp += 1000;
+                        score2 -= 1000;
+                    }
+                    else if (value <= 1000000)
+                    {
+                        temp += 10000;
+                        score2 -= 10000;
+                    }
+                    else if (value <= 10000000)
+                    {
+                        temp += 100000;
+                        score2 -= 100000;
+                    }
+                    else
+                    {
+                        temp += 100000;
+                        score2 -= 100000;
+                    }
+                    player2Score.text = score2.ToString();
+                    yield return new WaitForSeconds(0.01f);
+                }
+                break;
+            case 3:
+                while (temp < value)
+                {
+                    gameControl.audioSource.PlayOneShot(gameControl.CoinsSFX);
+                    if (value <= 1000)
+                    {
+                        temp += 100;
+                        score3 -= 100;
+                    }
+                    else if (value <= 10000)
+                    {
+                        temp += 100;
+                        score3 -= 100;
+                    }
+                    else if (value <= 100000)
+                    {
+                        temp += 1000;
+                        score3 -= 1000;
+                    }
+                    else if (value <= 1000000)
+                    {
+                        temp += 10000;
+                        score3 -= 10000;
+                    }
+                    else if (value <= 10000000)
+                    {
+                        temp += 100000;
+                        score3 -= 100000;
+                    }
+                    else
+                    {
+                        temp += 100000;
+                        score3 -= 100000;
+                    }
+                    player3Score.text = score3.ToString();
+                    yield return new WaitForSeconds(0.01f);
+                }
+                break;
+            case 4:
+                while (temp < value)
+                {
+                    gameControl.audioSource.PlayOneShot(gameControl.CoinsSFX);
+                    if (value <= 1000)
+                    {
+                        temp += 100;
+                        score4 -= 100;
+                    }
+                    else if (value <= 10000)
+                    {
+                        temp += 100;
+                        score4 -= 100;
+                    }
+                    else if (value <= 100000)
+                    {
+                        temp += 1000;
+                        score4 -= 1000;
+                    }
+                    else if (value <= 1000000)
+                    {
+                        temp += 10000;
+                        score4 -= 10000;
+                    }
+                    else if (value <= 10000000)
+                    {
+                        temp += 100000;
+                        score4 -= 100000;
+                    }
+                    else
+                    {
+                        temp += 100000;
+                        score4 -= 100000;
+                    }
+                    player4Score.text = score4.ToString();
+                    yield return new WaitForSeconds(0.01f);
+                }
+                break;
+        }
+        temp = 0;
+    }
+
     public static void MovePlayer(int playerToMove)
     {
         switch (playerToMove) { 
@@ -768,6 +948,27 @@ public class GameControl : MonoBehaviour {
                 player4.GetComponent<FollowThePath>().moveAllowed = true;
                 break;
         }
+    }
+
+    public static int returnPlayerIndex(int player)
+    {
+        int value = 1;
+        switch (player)
+        {
+            case 1:
+                value = GameControl.player1StartWaypoint;
+                break;
+            case 2:
+                value = GameControl.player2StartWaypoint;
+                break;
+            case 3:
+                value = GameControl.player3StartWaypoint;
+                break;
+            case 4:
+                value = GameControl.player4StartWaypoint;
+                break;
+        }
+        return value;
     }
 
     public static void TransformPlayerPosition(int player, int index)
