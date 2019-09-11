@@ -53,30 +53,35 @@ public class RewardCardScript : MonoBehaviour
         {
             case 0:
                 StartCoroutine(GameControl.AddPlayerScore(Dice.prevTurn, 400000));
-                GetComponent<BoxCollider2D>().enabled = true;
                 break;
             case 1:
                 StartCoroutine(GameControl.AddPlayerScore(Dice.prevTurn, 11700000));
-                GetComponent<BoxCollider2D>().enabled = true;
                 break;
             case 2:
                 StartCoroutine(GameControl.AddPlayerScore(Dice.prevTurn, 750000));
-                GetComponent<BoxCollider2D>().enabled = true;
                 break;
             case 3:
                 StartCoroutine(GameControl.AddPlayerScore(Dice.prevTurn, 9500000));
-                GetComponent<BoxCollider2D>().enabled = true;
                 break;
             case 4:
                 StartCoroutine(GameControl.AddPlayerScore(Dice.prevTurn, 4875000));
-                GetComponent<BoxCollider2D>().enabled = true;
                 break;
             default:
                 break;
         }
-        
+
+        StartCoroutine(LateCall());
 
         coroutineAllowed = true;
 
+    }
+
+    IEnumerator LateCall()
+    {
+
+        yield return new WaitForSeconds(3);
+
+        GetComponent<BoxCollider2D>().enabled = true;
+        //Do Function here...
     }
 }
