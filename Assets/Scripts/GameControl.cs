@@ -163,7 +163,8 @@ public class GameControl : MonoBehaviour {
             {
                 questionCard.SetActive(true);
                 questionCard.GetComponent<QuestionCardScript>().RollCard();
-                AudioManager.instance.PlaySound("Question", Vector3.zero);
+                audioSource.clip = QuestionSFX;
+                audioSource.Play();
                 //Debug.Log("Question!");
                 yesButton.gameObject.SetActive(true);
                 noButton.gameObject.SetActive(true);
@@ -174,7 +175,8 @@ public class GameControl : MonoBehaviour {
             {
                 rewardCard.SetActive(true);
                 rewardCard.GetComponent<RewardCardScript>().RollCard();
-                AudioManager.instance.PlaySound("Reward", Vector3.zero);
+                audioSource.clip = RewardSFX;
+                audioSource.Play();
                 //Debug.Log("Reward!");
             }
 
@@ -183,7 +185,8 @@ public class GameControl : MonoBehaviour {
             {
                 punishmentCard.SetActive(true);
                 punishmentCard.GetComponent<PunishmentCardScript>().RollCard();
-                AudioManager.instance.PlaySound("Punishment", Vector3.zero);
+                audioSource.clip = PunishmentSFX;
+                audioSource.Play();
                 //Debug.Log("Punishment!");
             }
 
@@ -193,7 +196,7 @@ public class GameControl : MonoBehaviour {
                 // Tangga
                 if (player1StartWaypoint + diceSideThrown == 6)
                 {
-                    AudioManager.instance.PlaySound("Ladder", Vector3.zero);
+                    audioSource.PlayOneShot(LadderSFX);
                     player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[45].transform.position;
                     player1.GetComponent<FollowThePath>().waypointIndex = 45;
                     player1.GetComponent<FollowThePath>().waypointIndex += 1;
@@ -201,7 +204,7 @@ public class GameControl : MonoBehaviour {
                 }
                 if (player1StartWaypoint + diceSideThrown == 13)
                 {
-                    AudioManager.instance.PlaySound("Ladder", Vector3.zero);
+                    audioSource.PlayOneShot(LadderSFX);
                     player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[41].transform.position;
                     player1.GetComponent<FollowThePath>().waypointIndex = 41;
                     player1.GetComponent<FollowThePath>().waypointIndex += 1;
@@ -209,7 +212,7 @@ public class GameControl : MonoBehaviour {
                 }
                 if (player1StartWaypoint + diceSideThrown == 20)
                 {
-                    AudioManager.instance.PlaySound("Ladder", Vector3.zero);
+                    audioSource.PlayOneShot(LadderSFX);
                     player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[35].transform.position;
                     player1.GetComponent<FollowThePath>().waypointIndex = 35;
                     player1.GetComponent<FollowThePath>().waypointIndex += 1;
@@ -217,7 +220,7 @@ public class GameControl : MonoBehaviour {
                 }
                 if (player1StartWaypoint + diceSideThrown == 25)
                 {
-                    AudioManager.instance.PlaySound("Ladder", Vector3.zero);
+                    audioSource.PlayOneShot(LadderSFX);
                     player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[32].transform.position;
                     player1.GetComponent<FollowThePath>().waypointIndex = 32;
                     player1.GetComponent<FollowThePath>().waypointIndex += 1;
@@ -227,7 +230,7 @@ public class GameControl : MonoBehaviour {
                 // Ular
                 if (player1StartWaypoint + diceSideThrown == 34)
                 {
-                    AudioManager.instance.PlaySound("Snake", Vector3.zero);
+                    audioSource.PlayOneShot(SnakeSFX);
                     player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[22].transform.position;
                     player1.GetComponent<FollowThePath>().waypointIndex = 22;
                     player1.GetComponent<FollowThePath>().waypointIndex += 1;
@@ -235,7 +238,7 @@ public class GameControl : MonoBehaviour {
                 }
                 if (player1StartWaypoint + diceSideThrown == 40)
                 {
-                    AudioManager.instance.PlaySound("Snake", Vector3.zero);
+                    audioSource.PlayOneShot(SnakeSFX);
                     player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[15].transform.position;
                     player1.GetComponent<FollowThePath>().waypointIndex = 15;
                     player1.GetComponent<FollowThePath>().waypointIndex += 1;
@@ -243,7 +246,7 @@ public class GameControl : MonoBehaviour {
                 }
                 if (player1StartWaypoint + diceSideThrown == 46)
                 {
-                    AudioManager.instance.PlaySound("Snake", Vector3.zero);
+                    audioSource.PlayOneShot(SnakeSFX);
                     player1.GetComponent<FollowThePath>().transform.position = player1.GetComponent<FollowThePath>().waypoints[3].transform.position;
                     player1.GetComponent<FollowThePath>().waypointIndex = 3;
                     player1.GetComponent<FollowThePath>().waypointIndex += 1;
@@ -572,7 +575,7 @@ public class GameControl : MonoBehaviour {
         if (player1.GetComponent<FollowThePath>().waypointIndex == 
             player1.GetComponent<FollowThePath>().waypoints.Count)
         {
-            AudioManager.instance.PlaySound("Winning", Vector3.zero);
+            audioSource.PlayOneShot(WinningSFX);
             StartCoroutine(AddPlayerScore(1,1000));
             PlayerWin(1);
             TransformPlayerPosition(1, 0);
@@ -582,7 +585,7 @@ public class GameControl : MonoBehaviour {
         if (player2.GetComponent<FollowThePath>().waypointIndex ==
             player2.GetComponent<FollowThePath>().waypoints.Count)
         {
-            AudioManager.instance.PlaySound("Winning", Vector3.zero);
+            audioSource.PlayOneShot(WinningSFX);
             StartCoroutine(AddPlayerScore(2, 1000));
             PlayerWin(2);
             TransformPlayerPosition(2, 0);
@@ -590,7 +593,7 @@ public class GameControl : MonoBehaviour {
         if (player3.GetComponent<FollowThePath>().waypointIndex ==
             player3.GetComponent<FollowThePath>().waypoints.Count)
         {
-            AudioManager.instance.PlaySound("Winning", Vector3.zero);
+            audioSource.PlayOneShot(WinningSFX);
             StartCoroutine(AddPlayerScore(3, 1000));
             PlayerWin(3);
             TransformPlayerPosition(3, 0);
@@ -598,7 +601,7 @@ public class GameControl : MonoBehaviour {
         if (player4.GetComponent<FollowThePath>().waypointIndex ==
             player4.GetComponent<FollowThePath>().waypoints.Count)
         {
-            AudioManager.instance.PlaySound("Winning", Vector3.zero);
+            audioSource.PlayOneShot(WinningSFX);
             StartCoroutine(AddPlayerScore(4, 1000));
             PlayerWin(4);
             TransformPlayerPosition(4, 0);
@@ -618,7 +621,7 @@ public class GameControl : MonoBehaviour {
             case 1:
                 while (temp < value)
                 {
-                    AudioManager.instance.PlaySound("Coins", Vector3.zero);
+                    gameControl.audioSource.PlayOneShot(gameControl.CoinsSFX);
                     if (value <= 1000)
                     {
                         temp += 100;
@@ -784,7 +787,7 @@ public class GameControl : MonoBehaviour {
             case 1:
                 while (temp < value)
                 {
-                    AudioManager.instance.PlaySound("Coins", Vector3.zero);
+                    gameControl.audioSource.PlayOneShot(gameControl.CoinsSFX);
                     if (value <= 1000)
                     {
                         temp += 100;

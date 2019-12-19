@@ -8,6 +8,7 @@ public class ButtonControl : MonoBehaviour
 {
     public GameObject exitPanel;
     public GameObject menuPanel;
+    public GameObject webView;
 
     private GameObject player1, player2, player3, player4;
     private GameObject playButton;
