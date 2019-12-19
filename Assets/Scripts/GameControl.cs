@@ -9,7 +9,6 @@ public class GameControl : MonoBehaviour {
     public GameObject exitPanel, menuPanel, questionCard, rewardCard, punishmentCard;
 
     public static Text player1Score, player2Score, player3Score, player4Score;
-    public int player1Winning, player2Winning, player3Winning, player4Winning;
     public static int score1, score2, score3, score4;
 
     public List<int> questionWaypoints, rewardWaypoints, punishmentWaypoints = new List<int>();
@@ -22,9 +21,7 @@ public class GameControl : MonoBehaviour {
 
     public static GameObject yesButton, noButton;
 
-    private static GameObject winning, pointer;
-
-    private Text whoWinsTextShadow;
+    private static GameObject winning, whoWinsTextShadow, pointer;
 
     private static GameObject player1, player2, player3, player4;
 
@@ -69,7 +66,7 @@ public class GameControl : MonoBehaviour {
         winning = GameObject.Find("Winning");
         yesButton = GameObject.Find("Yes");
         noButton = GameObject.Find("No");
-        whoWinsTextShadow = GameObject.Find("WhoWinsText").GetComponent<Text>();
+        whoWinsTextShadow = GameObject.Find("WhoWinsText");
         pointer = GameObject.Find("Pointer");
 
         pointerWaypoint1 = GameObject.Find("PointerWaypoint1");
@@ -577,9 +574,7 @@ public class GameControl : MonoBehaviour {
         {
             audioSource.PlayOneShot(WinningSFX);
             StartCoroutine(AddPlayerScore(1,1000));
-            PlayerWin(1);
             TransformPlayerPosition(1, 0);
-            
         }
 
         if (player2.GetComponent<FollowThePath>().waypointIndex ==
@@ -587,7 +582,6 @@ public class GameControl : MonoBehaviour {
         {
             audioSource.PlayOneShot(WinningSFX);
             StartCoroutine(AddPlayerScore(2, 1000));
-            PlayerWin(2);
             TransformPlayerPosition(2, 0);
         }
         if (player3.GetComponent<FollowThePath>().waypointIndex ==
@@ -595,7 +589,6 @@ public class GameControl : MonoBehaviour {
         {
             audioSource.PlayOneShot(WinningSFX);
             StartCoroutine(AddPlayerScore(3, 1000));
-            PlayerWin(3);
             TransformPlayerPosition(3, 0);
         }
         if (player4.GetComponent<FollowThePath>().waypointIndex ==
@@ -603,13 +596,12 @@ public class GameControl : MonoBehaviour {
         {
             audioSource.PlayOneShot(WinningSFX);
             StartCoroutine(AddPlayerScore(4, 1000));
-            PlayerWin(4);
             TransformPlayerPosition(4, 0);
         }
     }
 
     public static IEnumerator AddPlayerScore(int player, int value)
-    {        
+    {
         GameControl gameControl = GameObject.Find("GameControl").GetComponent<GameControl>();
 
         //Debug.Log("Add " + value + " to Player " + player);
@@ -938,75 +930,6 @@ public class GameControl : MonoBehaviour {
                 break;
         }
         temp = 0;
-    }
-
-    void PlayerWin(int player)
-    {
-        switch (player)
-        {
-            case 1:
-                if(player1Winning != 2)
-                {
-                    Debug.Log(player1Winning);
-                    player1Winning++;
-                }
-                else
-                {
-                    Debug.Log(player1Winning);
-                    whoWinsTextShadow.text = "Player 1 Wins";
-                    winning.gameObject.SetActive(true);
-                    whoWinsTextShadow.gameObject.SetActive(true);
-                    gameOver = true;
-                }
-                break;
-            case 2:
-                if (player2Winning != 2)
-                {
-                    Debug.Log(player2Winning);
-                    player2Winning++;
-                }
-                else
-                {
-                    Debug.Log(player2Winning);
-                    whoWinsTextShadow.text = "Player 2 Wins";
-                    winning.gameObject.SetActive(true);
-                    whoWinsTextShadow.gameObject.SetActive(true);
-                    gameOver = true;
-                }
-                break;
-            case 3:
-                if (player3Winning != 2)
-                {
-                    Debug.Log(player3Winning);
-                    player3Winning++;
-                }
-                else
-                {
-                    Debug.Log(player3Winning);
-                    whoWinsTextShadow.text = "Player 3 Wins";
-                    winning.gameObject.SetActive(true);
-                    whoWinsTextShadow.gameObject.SetActive(true);
-                    gameOver = true;
-                }
-                break;
-            case 4:
-                if (player4Winning != 2)
-                {
-                    Debug.Log(player4Winning);
-                    player4Winning++;
-                }
-                else
-                {
-                    Debug.Log(player4Winning);
-                    whoWinsTextShadow.text = "Player 4 Wins";
-                    winning.gameObject.SetActive(true);
-                    whoWinsTextShadow.gameObject.SetActive(true);
-                    gameOver = true;
-                }
-                break;
-            default:
-                break;
-        }
     }
 
     public static void MovePlayer(int playerToMove)

@@ -55,36 +55,29 @@ public class PunishmentCardScript : MonoBehaviour
         {
             case 0:
                 StartCoroutine(GameControl.SubtractPlayerScore(Dice.prevTurn, 400000));
-                
+                GetComponent<BoxCollider2D>().enabled = true;
                 break;
             case 1:
                 StartCoroutine(GameControl.SubtractPlayerScore(Dice.prevTurn, 100000));
+                GetComponent<BoxCollider2D>().enabled = true;
                 break;
             case 2:
                 GameControl.TransformPlayerPosition(Dice.prevTurn, (GameControl.returnPlayerIndex(Dice.prevTurn) - 3));
+                GetComponent<BoxCollider2D>().enabled = true;
                 break;
             case 3:
                 GameControl.TransformPlayerPosition(Dice.prevTurn, (GameControl.returnPlayerIndex(Dice.prevTurn) - 2));
+                GetComponent<BoxCollider2D>().enabled = true;
                 break;
             case 4:
                 GameControl.TransformPlayerPosition(Dice.prevTurn, (GameControl.returnPlayerIndex(Dice.prevTurn) - 1));
+                GetComponent<BoxCollider2D>().enabled = true;
                 break;
             default:
                 break;
         }
 
-        StartCoroutine(LateCall());
-
         coroutineAllowed = true;
 
-    }
-
-    IEnumerator LateCall()
-    {
-
-        yield return new WaitForSeconds(3);
-
-        GetComponent<BoxCollider2D>().enabled = true;
-        //Do Function here...
     }
 }

@@ -76,7 +76,6 @@ public class Dice : MonoBehaviour
 
     private IEnumerator RollTheDice()
     {
-        GetComponent<BoxCollider2D>().enabled = false;
         coroutineAllowed = false;
         int randomDiceSide = 0;
         for (int i = 0; i <= 20; i++)
@@ -384,17 +383,7 @@ public class Dice : MonoBehaviour
                 } */
 
         //Debug.Log(whosTurn);
-        StartCoroutine(LateCall());
         coroutineAllowed = true;
 
-    }
-
-    IEnumerator LateCall()
-    {
-
-        yield return new WaitForSeconds(2);
-
-        GetComponent<BoxCollider2D>().enabled = true;
-        //Do Function here...
     }
 }
