@@ -39,7 +39,7 @@ public class RewardCardScript : MonoBehaviour
         int randomCardSide = 0;
         for (int i = 0; i <= 30; i++)
         {
-            randomCardSide = Random.Range(0, 4);
+            randomCardSide = Random.Range(0, 19);
             //Debug.Log("=> " + randomCardSide);
             gameObject.GetComponent<SpriteRenderer>().sprite = cards[randomCardSide];
             //rend.sprite = cards[randomCardSide];
@@ -72,6 +72,8 @@ public class RewardCardScript : MonoBehaviour
                 GetComponent<BoxCollider2D>().enabled = true;
                 break;
             default:
+                Debug.Log("Reward No. " + rewardCardNumber);
+                GetComponent<BoxCollider2D>().enabled = true;
                 break;
         }
         

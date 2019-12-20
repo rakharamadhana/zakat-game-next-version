@@ -3,14 +3,12 @@ using UnityEngine;
 
 public class QuestionCardScript : MonoBehaviour
 {
-
     public Sprite[] cards;
     private SpriteRenderer rend;
     public static int whosTurn = 1;
     public static int questionCardNumber;
     private bool coroutineAllowed = true;
     private bool yes, no;
-
 
     // Use this for initialization
     private void Start()
@@ -28,12 +26,6 @@ public class QuestionCardScript : MonoBehaviour
         //Debug.Log("no =>" + no);
     }
 
-    public void OnMouseDown()
-    {
-        //gameObject.SetActive(false);
-        //Debug.Log("Question Answered");
-    }
-
     public void RollCard()
     {
         if (!GameControl.gameOver && coroutineAllowed)
@@ -48,7 +40,7 @@ public class QuestionCardScript : MonoBehaviour
         int randomCardSide = 0;
         for (int i = 0; i <= 30; i++)
         {
-            randomCardSide = Random.Range(0, 4);
+            randomCardSide = Random.Range(0, 9);
             //Debug.Log("=> " + randomCardSide);
             gameObject.GetComponent<SpriteRenderer>().sprite = cards[randomCardSide];
             //rend.sprite = cards[randomCardSide];
@@ -77,10 +69,7 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 1 Dijawab Ya");
                     Debug.Log("Harusnya Tidak");
                     Debug.Log("Anda Salah!");
-                    AudioManager.instance.PlaySound("Wrong Answer", Vector3.zero);
-                    gameControl.punishmentCard.SetActive(true);
-                    PunishmentCardScript punishment = GameObject.Find("PunishmentCard").GetComponent<PunishmentCardScript>();
-                    punishment.RollCard();
+                    WrongAnswer(gameControl);
                 }
                 GetComponent<BoxCollider2D>().enabled = true;
                 break;
@@ -90,10 +79,7 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 2 Dijawab Ya");
                     Debug.Log("Harusnya Benar");
                     Debug.Log("Anda Benar!");
-                    AudioManager.instance.PlaySound("Right Answer", Vector3.zero);
-                    gameControl.rewardCard.SetActive(true);
-                    RewardCardScript reward = GameObject.Find("RewardCard").GetComponent<RewardCardScript>();
-                    reward.RollCard();
+                    RightAnswer(gameControl);
                 }
                 GetComponent<BoxCollider2D>().enabled = true;
                 break;
@@ -103,10 +89,7 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 3 Dijawab Ya");
                     Debug.Log("Harusnya Tidak");
                     Debug.Log("Anda Salah!");
-                    AudioManager.instance.PlaySound("Wrong Answer", Vector3.zero);
-                    gameControl.punishmentCard.SetActive(true);
-                    PunishmentCardScript punishment = GameObject.Find("PunishmentCard").GetComponent<PunishmentCardScript>();
-                    punishment.RollCard();
+                    WrongAnswer(gameControl);
                 }
                 GetComponent<BoxCollider2D>().enabled = true;
                 break;
@@ -116,10 +99,7 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 4 Dijawab Ya");
                     Debug.Log("Harusnya Benar");
                     Debug.Log("Anda Benar!");
-                    AudioManager.instance.PlaySound("Right Answer", Vector3.zero);
-                    gameControl.rewardCard.SetActive(true);
-                    RewardCardScript reward = GameObject.Find("RewardCard").GetComponent<RewardCardScript>();
-                    reward.RollCard();
+                    RightAnswer(gameControl);
                 }
                 GetComponent<BoxCollider2D>().enabled = true;
                 break;
@@ -129,14 +109,62 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 5 Dijawab Ya");
                     Debug.Log("Harusnya Tidak");
                     Debug.Log("Anda Salah!");
-                    AudioManager.instance.PlaySound("Wrong Answer", Vector3.zero);
-                    gameControl.punishmentCard.SetActive(true);
-                    PunishmentCardScript punishment = GameObject.Find("PunishmentCard").GetComponent<PunishmentCardScript>();
-                    punishment.RollCard();
+                    WrongAnswer(gameControl);
+                }
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            case 5:
+                if (yes)
+                {
+                    Debug.Log("Pernyataan 6 Dijawab Ya");
+                    Debug.Log("Harusnya Tidak");
+                    Debug.Log("Anda Salah!");
+                    WrongAnswer(gameControl);
+                }
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            case 6:
+                if (yes)
+                {
+                    Debug.Log("Pernyataan 7 Dijawab Ya");
+                    Debug.Log("Harusnya Tidak");
+                    Debug.Log("Anda Salah!");
+                    WrongAnswer(gameControl);
+                }
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            case 7:
+                if (yes)
+                {
+                    Debug.Log("Pernyataan 8 Dijawab Ya");
+                    Debug.Log("Harusnya Benar");
+                    Debug.Log("Anda Benar!");
+                    RightAnswer(gameControl);
+                }
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            case 8:
+                if (yes)
+                {
+                    Debug.Log("Pernyataan 9 Dijawab Ya");
+                    Debug.Log("Harusnya Tidak");
+                    Debug.Log("Anda Salah!");
+                    WrongAnswer(gameControl);
+                }
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            case 9:
+                if (yes)
+                {
+                    Debug.Log("Pernyataan 10 Dijawab Ya");
+                    Debug.Log("Harusnya Benar");
+                    Debug.Log("Anda Benar!");
+                    RightAnswer(gameControl);
                 }
                 GetComponent<BoxCollider2D>().enabled = true;
                 break;
             default:
+                Debug.Log("Question No. " + questionCardNumber);
                 break;
         }
 
@@ -163,10 +191,7 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 1 Dijawab Tidak");
                     Debug.Log("Harusnya Tidak");
                     Debug.Log("Anda Benar!");
-                    AudioManager.instance.PlaySound("Right Answer", Vector3.zero);
-                    gameControl.rewardCard.SetActive(true);
-                    RewardCardScript reward = GameObject.Find("RewardCard").GetComponent<RewardCardScript>();
-                    reward.RollCard();
+                    RightAnswer(gameControl);
                 }
                 GetComponent<BoxCollider2D>().enabled = true;
                 break;
@@ -176,10 +201,7 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 2 Dijawab Tidak");
                     Debug.Log("Harusnya Benar");
                     Debug.Log("Anda Salah!");
-                    AudioManager.instance.PlaySound("Wrong Answer", Vector3.zero);
-                    gameControl.punishmentCard.SetActive(true);
-                    PunishmentCardScript punishment = GameObject.Find("PunishmentCard").GetComponent<PunishmentCardScript>();
-                    punishment.RollCard();
+                    WrongAnswer(gameControl);
                 }
                 GetComponent<BoxCollider2D>().enabled = true;
                 break;
@@ -189,10 +211,7 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 3 Dijawab Tidak");
                     Debug.Log("Harusnya Tidak");
                     Debug.Log("Anda Benar!");
-                    AudioManager.instance.PlaySound("Right Answer", Vector3.zero);
-                    gameControl.rewardCard.SetActive(true);
-                    RewardCardScript reward = GameObject.Find("RewardCard").GetComponent<RewardCardScript>();
-                    reward.RollCard();
+                    RightAnswer(gameControl);
                 }
                 GetComponent<BoxCollider2D>().enabled = true;
                 break;
@@ -202,10 +221,7 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 4 Dijawab Tidak");
                     Debug.Log("Harusnya Benar");
                     Debug.Log("Anda Salah!");
-                    AudioManager.instance.PlaySound("Wrong Answer", Vector3.zero);
-                    gameControl.punishmentCard.SetActive(true);
-                    PunishmentCardScript punishment = GameObject.Find("PunishmentCard").GetComponent<PunishmentCardScript>();
-                    punishment.RollCard();
+                    WrongAnswer(gameControl);
                 }
                 GetComponent<BoxCollider2D>().enabled = true;
                 break;
@@ -215,14 +231,62 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 5 Dijawab Tidak");
                     Debug.Log("Harusnya Tidak");
                     Debug.Log("Anda Benar!");
-                    AudioManager.instance.PlaySound("Right Answer", Vector3.zero);
-                    gameControl.rewardCard.SetActive(true);
-                    RewardCardScript reward = GameObject.Find("RewardCard").GetComponent<RewardCardScript>();
-                    reward.RollCard();
+                    RightAnswer(gameControl);
+                }
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            case 5:
+                if (no)
+                {
+                    Debug.Log("Pernyataan 6 Dijawab Tidak");
+                    Debug.Log("Harusnya Tidak");
+                    Debug.Log("Anda Benar!");
+                    RightAnswer(gameControl);
+                }
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            case 6:
+                if (no)
+                {
+                    Debug.Log("Pernyataan 7 Dijawab Tidak");
+                    Debug.Log("Harusnya Tidak");
+                    Debug.Log("Anda Benar!");
+                    RightAnswer(gameControl);
+                }
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            case 7:
+                if (no)
+                {
+                    Debug.Log("Pernyataan 8 Dijawab Tidak");
+                    Debug.Log("Harusnya Benar");
+                    Debug.Log("Anda Salah!");
+                    WrongAnswer(gameControl);
+                }
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            case 8:
+                if (no)
+                {
+                    Debug.Log("Pernyataan 9 Dijawab Tidak");
+                    Debug.Log("Harusnya Tidak");
+                    Debug.Log("Anda Benar!");
+                    RightAnswer(gameControl);
+                }
+                GetComponent<BoxCollider2D>().enabled = true;
+                break;
+            case 9:
+                if (no)
+                {
+                    Debug.Log("Pernyataan 10 Dijawab Tidak");
+                    Debug.Log("Harusnya Benar");
+                    Debug.Log("Anda Salah!");
+                    WrongAnswer(gameControl);
                 }
                 GetComponent<BoxCollider2D>().enabled = true;
                 break;
             default:
+                Debug.Log("Question No. "+questionCardNumber);
                 break;
         }
 
@@ -232,5 +296,21 @@ public class QuestionCardScript : MonoBehaviour
         gameObject.SetActive(false);
         GameControl.yesButton.SetActive(false);
         GameControl.noButton.SetActive(false);
+    }
+
+    void RightAnswer(GameControl gameControl)
+    {
+        AudioManager.instance.PlaySound("Right Answer", Vector3.zero);
+        gameControl.rewardCard.SetActive(true);
+        RewardCardScript reward = GameObject.Find("RewardCard").GetComponent<RewardCardScript>();
+        reward.RollCard();
+    }
+
+    void WrongAnswer(GameControl gameControl)
+    {
+        AudioManager.instance.PlaySound("Wrong Answer", Vector3.zero);
+        gameControl.punishmentCard.SetActive(true);
+        PunishmentCardScript punishment = GameObject.Find("PunishmentCard").GetComponent<PunishmentCardScript>();
+        punishment.RollCard();
     }
 }
