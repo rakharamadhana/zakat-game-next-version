@@ -24,8 +24,8 @@ public class QuestionCardScript : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("yes =>" + yes);
-        Debug.Log("no =>" + no);
+        //Debug.Log("yes =>" + yes);
+        //Debug.Log("no =>" + no);
     }
 
     public void OnMouseDown()
@@ -38,7 +38,7 @@ public class QuestionCardScript : MonoBehaviour
     {
         if (!GameControl.gameOver && coroutineAllowed)
             StartCoroutine("RollTheCard");
-        GetComponent<AudioSource>().Play();
+        AudioManager.instance.PlaySound("Rolling Card", Vector3.zero);
         GetComponent<BoxCollider2D>().enabled = false;
     }
 
@@ -77,7 +77,7 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 1 Dijawab Ya");
                     Debug.Log("Harusnya Tidak");
                     Debug.Log("Anda Salah!");
-                    gameControl.audioSource.PlayOneShot(gameControl.WrongSFX);
+                    AudioManager.instance.PlaySound("Wrong Answer", Vector3.zero);
                     gameControl.punishmentCard.SetActive(true);
                     PunishmentCardScript punishment = GameObject.Find("PunishmentCard").GetComponent<PunishmentCardScript>();
                     punishment.RollCard();
@@ -90,7 +90,7 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 2 Dijawab Ya");
                     Debug.Log("Harusnya Benar");
                     Debug.Log("Anda Benar!");
-                    gameControl.audioSource.PlayOneShot(gameControl.RightSFX);
+                    AudioManager.instance.PlaySound("Right Answer", Vector3.zero);
                     gameControl.rewardCard.SetActive(true);
                     RewardCardScript reward = GameObject.Find("RewardCard").GetComponent<RewardCardScript>();
                     reward.RollCard();
@@ -103,7 +103,7 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 3 Dijawab Ya");
                     Debug.Log("Harusnya Tidak");
                     Debug.Log("Anda Salah!");
-                    gameControl.audioSource.PlayOneShot(gameControl.WrongSFX);
+                    AudioManager.instance.PlaySound("Wrong Answer", Vector3.zero);
                     gameControl.punishmentCard.SetActive(true);
                     PunishmentCardScript punishment = GameObject.Find("PunishmentCard").GetComponent<PunishmentCardScript>();
                     punishment.RollCard();
@@ -116,7 +116,7 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 4 Dijawab Ya");
                     Debug.Log("Harusnya Benar");
                     Debug.Log("Anda Benar!");
-                    gameControl.audioSource.PlayOneShot(gameControl.RightSFX);
+                    AudioManager.instance.PlaySound("Right Answer", Vector3.zero);
                     gameControl.rewardCard.SetActive(true);
                     RewardCardScript reward = GameObject.Find("RewardCard").GetComponent<RewardCardScript>();
                     reward.RollCard();
@@ -129,7 +129,7 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 5 Dijawab Ya");
                     Debug.Log("Harusnya Tidak");
                     Debug.Log("Anda Salah!");
-                    gameControl.audioSource.PlayOneShot(gameControl.WrongSFX);
+                    AudioManager.instance.PlaySound("Wrong Answer", Vector3.zero);
                     gameControl.punishmentCard.SetActive(true);
                     PunishmentCardScript punishment = GameObject.Find("PunishmentCard").GetComponent<PunishmentCardScript>();
                     punishment.RollCard();
@@ -163,7 +163,7 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 1 Dijawab Tidak");
                     Debug.Log("Harusnya Tidak");
                     Debug.Log("Anda Benar!");
-                    gameControl.audioSource.PlayOneShot(gameControl.RightSFX);
+                    AudioManager.instance.PlaySound("Right Answer", Vector3.zero);
                     gameControl.rewardCard.SetActive(true);
                     RewardCardScript reward = GameObject.Find("RewardCard").GetComponent<RewardCardScript>();
                     reward.RollCard();
@@ -176,7 +176,7 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 2 Dijawab Tidak");
                     Debug.Log("Harusnya Benar");
                     Debug.Log("Anda Salah!");
-                    gameControl.audioSource.PlayOneShot(gameControl.WrongSFX);
+                    AudioManager.instance.PlaySound("Wrong Answer", Vector3.zero);
                     gameControl.punishmentCard.SetActive(true);
                     PunishmentCardScript punishment = GameObject.Find("PunishmentCard").GetComponent<PunishmentCardScript>();
                     punishment.RollCard();
@@ -189,7 +189,7 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 3 Dijawab Tidak");
                     Debug.Log("Harusnya Tidak");
                     Debug.Log("Anda Benar!");
-                    gameControl.audioSource.PlayOneShot(gameControl.RightSFX);
+                    AudioManager.instance.PlaySound("Right Answer", Vector3.zero);
                     gameControl.rewardCard.SetActive(true);
                     RewardCardScript reward = GameObject.Find("RewardCard").GetComponent<RewardCardScript>();
                     reward.RollCard();
@@ -202,7 +202,7 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 4 Dijawab Tidak");
                     Debug.Log("Harusnya Benar");
                     Debug.Log("Anda Salah!");
-                    gameControl.audioSource.PlayOneShot(gameControl.WrongSFX);
+                    AudioManager.instance.PlaySound("Wrong Answer", Vector3.zero);
                     gameControl.punishmentCard.SetActive(true);
                     PunishmentCardScript punishment = GameObject.Find("PunishmentCard").GetComponent<PunishmentCardScript>();
                     punishment.RollCard();
@@ -215,7 +215,7 @@ public class QuestionCardScript : MonoBehaviour
                     Debug.Log("Pernyataan 5 Dijawab Tidak");
                     Debug.Log("Harusnya Tidak");
                     Debug.Log("Anda Benar!");
-                    gameControl.audioSource.PlayOneShot(gameControl.RightSFX);
+                    AudioManager.instance.PlaySound("Right Answer", Vector3.zero);
                     gameControl.rewardCard.SetActive(true);
                     RewardCardScript reward = GameObject.Find("RewardCard").GetComponent<RewardCardScript>();
                     reward.RollCard();

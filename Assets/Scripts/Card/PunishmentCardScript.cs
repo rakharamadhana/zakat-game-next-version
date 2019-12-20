@@ -31,7 +31,7 @@ public class PunishmentCardScript : MonoBehaviour
     {
         if (!GameControl.gameOver && coroutineAllowed)
             StartCoroutine("RollTheCard");
-        GetComponent<AudioSource>().Play();
+        AudioManager.instance.PlaySound("Rolling Card", Vector3.zero);
         GetComponent<BoxCollider2D>().enabled = false;
     }
 

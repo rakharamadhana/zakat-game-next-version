@@ -69,7 +69,7 @@ public class Dice : MonoBehaviour
             i++;
             diceAnim.SetTrigger("Rotate");
             StartCoroutine("RollTheDice");
-            GetComponent<AudioSource>().Play();
+            AudioManager.instance.PlaySound("Rolling Dice", Vector3.zero);
             turn.text = i.ToString();
         }
     }
