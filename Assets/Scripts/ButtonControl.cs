@@ -93,28 +93,33 @@ public class ButtonControl : MonoBehaviour
         Application.Quit();
     }
 
+    public void InitiateGame()
+    {
+        SceneManager.LoadScene("LoadingScene");
+    }
+
     public void oneP()
     {
         GameControl.nofPlayers = 1;
-        SceneManager.LoadScene("MainScene");
+        InitiateGame();
     }
 
     public void twoP()
     {
         GameControl.nofPlayers = 2;
-        SceneManager.LoadScene("MainScene");
+        InitiateGame();
     }
 
     public void threeP()
     {
         GameControl.nofPlayers = 3;
-        SceneManager.LoadScene("MainScene");
+        InitiateGame();
     }
 
     public void fourP()
     {
         GameControl.nofPlayers = 4;
-        SceneManager.LoadScene("MainScene");
+        InitiateGame();
     }
 
     public void OpenUrl()

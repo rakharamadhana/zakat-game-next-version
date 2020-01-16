@@ -35,7 +35,7 @@ public class GameControl : MonoBehaviour {
     public static int player2StartWaypoint = 0;
     public static int player3StartWaypoint = 0;
     public static int player4StartWaypoint = 0;
-
+    public static bool rollDisabled = false;
     public static bool gameOver = false;
 
     // Use this for initialization
@@ -109,7 +109,7 @@ public class GameControl : MonoBehaviour {
         }
 
         //Checking Turns
-        CheckTurn(); // Checking whos turn it is.
+        CheckTurn(); // Checking whos turn is it.
 
         //Checking Tiles
         CheckTiles(); // Checking what tiles that touched.
@@ -258,9 +258,8 @@ public class GameControl : MonoBehaviour {
             {
                 questionCard.SetActive(true);
                 questionCard.GetComponent<QuestionCardScript>().RollCard();
-                audioSource.clip = QuestionSFX;
-                audioSource.Play();
-                Debug.Log("Question!");
+                AudioManager.instance.PlaySound("Question", Vector3.zero);
+                //Debug.Log("Question!");
                 yesButton.gameObject.SetActive(true);
                 noButton.gameObject.SetActive(true);
             }
@@ -270,9 +269,8 @@ public class GameControl : MonoBehaviour {
             {
                 rewardCard.SetActive(true);
                 rewardCard.GetComponent<RewardCardScript>().RollCard();
-                audioSource.clip = RewardSFX;
-                audioSource.Play();
-                Debug.Log("Reward!");
+                AudioManager.instance.PlaySound("Reward", Vector3.zero);
+                //Debug.Log("Reward!");
             }
 
             // Punishment
@@ -280,9 +278,8 @@ public class GameControl : MonoBehaviour {
             {
                 punishmentCard.SetActive(true);
                 punishmentCard.GetComponent<PunishmentCardScript>().RollCard();
-                audioSource.clip = PunishmentSFX;
-                audioSource.Play();
-                Debug.Log("Punishment!");
+                AudioManager.instance.PlaySound("Punishment", Vector3.zero);
+                //Debug.Log("Punishment!");
             }
 
             // Snake & Ladder
@@ -553,6 +550,11 @@ public class GameControl : MonoBehaviour {
 
     public static void TransformPlayerPosition(int player, int index)
     {
+        if(index > player1.GetComponent<FollowThePath>().waypoints.Count)
+        {
+            index = 0;
+        }
+
         switch (player)
         {
             case 1:
@@ -565,7 +567,7 @@ public class GameControl : MonoBehaviour {
                 break;
             case 2:
                 player2.GetComponent<FollowThePath>().transform.position = player2.GetComponent<FollowThePath>().waypoints[index].transform.position;
-                player2.GetComponent<FollowThePath>().waypointIndex = 0;
+                player2.GetComponent<FollowThePath>().waypointIndex = index;
                 player2.GetComponent<FollowThePath>().waypointIndex += 1;
                 MovePlayer(player);
                 player2.GetComponent<FollowThePath>().moveAllowed = false;
@@ -573,7 +575,7 @@ public class GameControl : MonoBehaviour {
                 break;
             case 3:
                 player3.GetComponent<FollowThePath>().transform.position = player3.GetComponent<FollowThePath>().waypoints[index].transform.position;
-                player3.GetComponent<FollowThePath>().waypointIndex = 0;
+                player3.GetComponent<FollowThePath>().waypointIndex = index;
                 player3.GetComponent<FollowThePath>().waypointIndex += 1;
                 MovePlayer(player);
                 player3.GetComponent<FollowThePath>().moveAllowed = false;
@@ -581,7 +583,7 @@ public class GameControl : MonoBehaviour {
                 break;
             case 4:
                 player4.GetComponent<FollowThePath>().transform.position = player4.GetComponent<FollowThePath>().waypoints[index].transform.position;
-                player4.GetComponent<FollowThePath>().waypointIndex = 0;
+                player4.GetComponent<FollowThePath>().waypointIndex = index;
                 player4.GetComponent<FollowThePath>().waypointIndex += 1;
                 MovePlayer(player);
                 player4.GetComponent<FollowThePath>().moveAllowed = false;
@@ -661,7 +663,7 @@ public class GameControl : MonoBehaviour {
             case 2:
                 while (temp < value)
                 {
-                    gameControl.audioSource.PlayOneShot(gameControl.CoinsSFX);
+                    AudioManager.instance.PlaySound("Coins", Vector3.zero);
                     if (value <= 1000)
                     {
                         temp += 100;
@@ -699,7 +701,7 @@ public class GameControl : MonoBehaviour {
             case 3:
                 while (temp < value)
                 {
-                    gameControl.audioSource.PlayOneShot(gameControl.CoinsSFX);
+                    AudioManager.instance.PlaySound("Coins", Vector3.zero);
                     if (value <= 1000)
                     {
                         temp += 100;
@@ -737,7 +739,7 @@ public class GameControl : MonoBehaviour {
             case 4:
                 while (temp < value)
                 {
-                    gameControl.audioSource.PlayOneShot(gameControl.CoinsSFX);
+                    AudioManager.instance.PlaySound("Coins", Vector3.zero);
                     if (value <= 1000)
                     {
                         temp += 100;
@@ -827,7 +829,7 @@ public class GameControl : MonoBehaviour {
             case 2:
                 while (temp < value)
                 {
-                    gameControl.audioSource.PlayOneShot(gameControl.CoinsSFX);
+                    AudioManager.instance.PlaySound("Coins", Vector3.zero);
                     if (value <= 1000)
                     {
                         temp += 100;
@@ -865,7 +867,7 @@ public class GameControl : MonoBehaviour {
             case 3:
                 while (temp < value)
                 {
-                    gameControl.audioSource.PlayOneShot(gameControl.CoinsSFX);
+                    AudioManager.instance.PlaySound("Coins", Vector3.zero);
                     if (value <= 1000)
                     {
                         temp += 100;
@@ -903,7 +905,7 @@ public class GameControl : MonoBehaviour {
             case 4:
                 while (temp < value)
                 {
-                    gameControl.audioSource.PlayOneShot(gameControl.CoinsSFX);
+                    AudioManager.instance.PlaySound("Coins", Vector3.zero);
                     if (value <= 1000)
                     {
                         temp += 100;

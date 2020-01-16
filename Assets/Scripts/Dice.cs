@@ -46,6 +46,8 @@ public class Dice : MonoBehaviour
         player2MoveValue = GameObject.Find("Player2MoveValue");
         player3MoveValue = GameObject.Find("Player3MoveValue");
         player4MoveValue = GameObject.Find("Player4MoveValue");
+
+        Debug.Log(GameControl.rollDisabled);
     }
 
     private void OnMouseDown()
@@ -64,7 +66,7 @@ public class Dice : MonoBehaviour
             isMoving = false;
         }
 
-        if (!GameControl.gameOver && coroutineAllowed && !isMoving)
+        if (!GameControl.gameOver && coroutineAllowed && !isMoving && !GameControl.rollDisabled)
         {
             i++;
             diceAnim.SetTrigger("Rotate");

@@ -1,0 +1,595 @@
+fileFormatVersion: 2
+guid: 11bff867782bb0142819da46b21e635a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7392424243706112345
+    second: Kartu Pertanyaan_24
+  - first:
+      213: -225108251659732843
+    second: Kartu Pertanyaan_23
+  - first:
+      213: 380907511756339553
+    second: Kartu Pertanyaan_22
+  - first:
+      213: 5319092674593990583
+    second: Kartu Pertanyaan_21
+  - first:
+      213: 6555014497503771230
+    second: Kartu Pertanyaan_20
+  - first:
+      213: 1283590832358916229
+    second: Kartu Pertanyaan_29
+  - first:
+      213: 9113306079916602922
+    second: Kartu Pertanyaan_28
+  - first:
+      213: -1119833896122574719
+    second: Kartu Pertanyaan_27
+  - first:
+      213: -7464027420140685708
+    second: Kartu Pertanyaan_26
+  - first:
+      213: 7062722066296305085
+    second: Kartu Pertanyaan_25
+  - first:
+      213: 7855258282232005504
+    second: Kartu Pertanyaan_34
+  - first:
+      213: -6046628627875071633
+    second: Kartu Pertanyaan_33
+  - first:
+      213: 686720428582688605
+    second: Kartu Pertanyaan_32
+  - first:
+      213: 4592117321796845653
+    second: Kartu Pertanyaan_31
+  - first:
+      213: -5403893425995034938
+    second: Kartu Pertanyaan_30
+  - first:
+      213: -2314415694025972963
+    second: Kartu Pertanyaan_39
+  - first:
+      213: -5645482286477450128
+    second: Kartu Pertanyaan_38
+  - first:
+      213: 6412253474106438098
+    second: Kartu Pertanyaan_37
+  - first:
+      213: -4557040402256759747
+    second: Kartu Pertanyaan_36
+  - first:
+      213: 7242112839728064670
+    second: Kartu Pertanyaan_35
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 3714
+        width: 655
+        height: 988
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc9ba8ea19bf894fa620516a72e2a59
+      internalID: -7392424243706112345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_23
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 3714
+        width: 657
+        height: 988
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070fbea901db74a4b9299371c9de0dda
+      internalID: -225108251659732843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_22
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 3714
+        width: 657
+        height: 988
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff822c42a9dddec4dbcbae3d915c28e3
+      internalID: 380907511756339553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_21
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 3714
+        width: 657
+        height: 988
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9898e0642ecf8e445bf45aaafbba4aa9
+      internalID: 5319092674593990583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_20
+      rect:
+        serializedVersion: 2
+        x: 3513
+        y: 3714
+        width: 657
+        height: 988
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a27d6fbf97dab549a024ab8cdaaac0d
+      internalID: 6555014497503771230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_29
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2573
+        width: 655
+        height: 988
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c42f1a99037e74cbc2bb5e8ba31816
+      internalID: 1283590832358916229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_28
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 2581
+        width: 657
+        height: 988
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db7dc0a6bb5a6d4ba545ea115d2f06b
+      internalID: 9113306079916602922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_27
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 2573
+        width: 657
+        height: 988
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6780f19957c6ee448baa2795f2c2ec2a
+      internalID: -1119833896122574719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_26
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 2573
+        width: 657
+        height: 988
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3bd56364f2090245b7b03e0a84ddaab
+      internalID: -7464027420140685708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_25
+      rect:
+        serializedVersion: 2
+        x: 3513
+        y: 2573
+        width: 657
+        height: 988
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65063e6e2d8fe2d408d6ad516c985c74
+      internalID: 7062722066296305085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1404
+        width: 655
+        height: 987
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590325813778d86419a97c73c62d2500
+      internalID: 7855258282232005504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_33
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1404
+        width: 657
+        height: 987
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8d3230f1d077248ab81915fbdec5c3
+      internalID: -6046628627875071633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_32
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 1404
+        width: 657
+        height: 987
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e45010c747e3644b9157b70293d894
+      internalID: 686720428582688605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_31
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1404
+        width: 657
+        height: 987
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a87423e36e709742a3baee5d6ac08d0
+      internalID: 4592117321796845653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_30
+      rect:
+        serializedVersion: 2
+        x: 3513
+        y: 1404
+        width: 657
+        height: 987
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f92328190ee424eb8a79115295bd6c
+      internalID: -5403893425995034938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_39
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 187
+        width: 655
+        height: 988
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9723ea42c5c4bac439b528012cfd1710
+      internalID: -2314415694025972963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_38
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 187
+        width: 657
+        height: 988
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a6c3d98bdda234f834d98ff155f480
+      internalID: -5645482286477450128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_37
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 187
+        width: 657
+        height: 988
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a959120e9ad1dd4ea18e488921720d5
+      internalID: 6412253474106438098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_36
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 187
+        width: 657
+        height: 988
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cf36b224e6e69499774b89c131bb6f
+      internalID: -4557040402256759747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kartu Pertanyaan_35
+      rect:
+        serializedVersion: 2
+        x: 3506
+        y: 184
+        width: 657
+        height: 988
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37d8a591dd51164d969977a2983441e
+      internalID: 7242112839728064670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
