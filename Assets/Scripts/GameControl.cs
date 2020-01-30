@@ -10,6 +10,7 @@ public class GameControl : MonoBehaviour {
 
     public static Text player1Score, player2Score, player3Score, player4Score;
     public static int score1, score2, score3, score4;
+    public static int winning1, winning2, winning3, winning4;
 
     public List<int> questionWaypoints, rewardWaypoints, punishmentWaypoints = new List<int>();
 
@@ -331,9 +332,8 @@ public class GameControl : MonoBehaviour {
             {
                 questionCard.SetActive(true);
                 questionCard.GetComponent<QuestionCardScript>().RollCard();
-                audioSource.clip = QuestionSFX;
-                audioSource.Play();
-                Debug.Log("Question!");
+                AudioManager.instance.PlaySound("Question", Vector3.zero);
+                //Debug.Log("Question!");
                 yesButton.gameObject.SetActive(true);
                 noButton.gameObject.SetActive(true);
             }
@@ -343,9 +343,8 @@ public class GameControl : MonoBehaviour {
             {
                 rewardCard.SetActive(true);
                 rewardCard.GetComponent<RewardCardScript>().RollCard();
-                audioSource.clip = RewardSFX;
-                audioSource.Play();
-                Debug.Log("Reward!");
+                AudioManager.instance.PlaySound("Reward", Vector3.zero);
+                //Debug.Log("Reward!");
             }
 
             // Punishment
@@ -353,9 +352,8 @@ public class GameControl : MonoBehaviour {
             {
                 punishmentCard.SetActive(true);
                 punishmentCard.GetComponent<PunishmentCardScript>().RollCard();
-                audioSource.clip = PunishmentSFX;
-                audioSource.Play();
-                Debug.Log("Punishment!");
+                AudioManager.instance.PlaySound("Punishment", Vector3.zero);
+                //Debug.Log("Punishment!");
             }
 
             // Snake & Ladder
@@ -407,9 +405,8 @@ public class GameControl : MonoBehaviour {
             {
                 questionCard.SetActive(true);
                 questionCard.GetComponent<QuestionCardScript>().RollCard();
-                audioSource.clip = QuestionSFX;
-                audioSource.Play();
-                Debug.Log("Question!");
+                AudioManager.instance.PlaySound("Question", Vector3.zero);
+                //Debug.Log("Question!");
                 yesButton.gameObject.SetActive(true);
                 noButton.gameObject.SetActive(true);
             }
@@ -419,9 +416,8 @@ public class GameControl : MonoBehaviour {
             {
                 rewardCard.SetActive(true);
                 rewardCard.GetComponent<RewardCardScript>().RollCard();
-                audioSource.clip = RewardSFX;
-                audioSource.Play();
-                Debug.Log("Reward!");
+                AudioManager.instance.PlaySound("Reward", Vector3.zero);
+                //Debug.Log("Reward!");
             }
 
             // Punishment
@@ -429,9 +425,8 @@ public class GameControl : MonoBehaviour {
             {
                 punishmentCard.SetActive(true);
                 punishmentCard.GetComponent<PunishmentCardScript>().RollCard();
-                audioSource.clip = PunishmentSFX;
-                audioSource.Play();
-                Debug.Log("Punishment!");
+                AudioManager.instance.PlaySound("Punishment", Vector3.zero);
+                //Debug.Log("Punishment!");
             }
 
             // Snake & Ladder
@@ -482,6 +477,17 @@ public class GameControl : MonoBehaviour {
         {
             AudioManager.instance.PlaySound("Winning", Vector3.zero);
             StartCoroutine(AddPlayerScore(1, 1000));
+            if (winning1 == 3)
+            {
+                gameOver = true;
+                winning.gameObject.SetActive(true);
+                whoWinsTextShadow.gameObject.SetActive(true);
+                whoWinsTextShadow.GetComponent<Text>().text = "Player 1 Win";
+            }
+            else
+            {
+                winning1++;
+            }
             TransformPlayerPosition(1, 0);
         }
 
@@ -490,6 +496,17 @@ public class GameControl : MonoBehaviour {
         {
             AudioManager.instance.PlaySound("Winning", Vector3.zero);
             StartCoroutine(AddPlayerScore(2, 1000));
+            if (winning2 == 3)
+            {
+                gameOver = true;
+                winning.gameObject.SetActive(true);
+                whoWinsTextShadow.gameObject.SetActive(true);
+                whoWinsTextShadow.GetComponent<Text>().text = "Player 2 Win";
+            }
+            else
+            {
+                winning2++;
+            }
             TransformPlayerPosition(2, 0);
         }
         if (player3.GetComponent<FollowThePath>().waypointIndex ==
@@ -497,6 +514,17 @@ public class GameControl : MonoBehaviour {
         {
             AudioManager.instance.PlaySound("Winning", Vector3.zero);
             StartCoroutine(AddPlayerScore(3, 1000));
+            if (winning3 == 3)
+            {
+                gameOver = true;
+                winning.gameObject.SetActive(true);
+                whoWinsTextShadow.gameObject.SetActive(true);
+                whoWinsTextShadow.GetComponent<Text>().text = "Player 3 Win";
+            }
+            else
+            {
+                winning3++;
+            }
             TransformPlayerPosition(3, 0);
         }
         if (player4.GetComponent<FollowThePath>().waypointIndex ==
@@ -504,6 +532,17 @@ public class GameControl : MonoBehaviour {
         {
             AudioManager.instance.PlaySound("Winning", Vector3.zero);
             StartCoroutine(AddPlayerScore(4, 1000));
+            if (winning4 == 3)
+            {
+                gameOver = true;
+                winning.gameObject.SetActive(true);
+                whoWinsTextShadow.gameObject.SetActive(true);
+                whoWinsTextShadow.GetComponent<Text>().text = "Player 4 Win";
+            }
+            else
+            {
+                winning4++;
+            }
             TransformPlayerPosition(4, 0);
         }
     }
@@ -511,13 +550,13 @@ public class GameControl : MonoBehaviour {
     void GoUp(int playerIndex, int waypointIndex)
     {
         AudioManager.instance.PlaySound("Ladder", Vector3.zero);
-        MovePlayerPosition(playerIndex, waypointIndex);
+        TransformPlayerPosition(playerIndex, waypointIndex);
     }
 
     void GoDown(int playerIndex, int waypointIndex)
     {
         AudioManager.instance.PlaySound("Snake", Vector3.zero);
-        MovePlayerPosition(playerIndex, waypointIndex);
+        TransformPlayerPosition(playerIndex, waypointIndex);
     }
 
     public static void MovePlayerPosition(int playerIndex, int waypointIndex)
@@ -550,7 +589,7 @@ public class GameControl : MonoBehaviour {
 
     public static void TransformPlayerPosition(int player, int index)
     {
-        if(index > player1.GetComponent<FollowThePath>().waypoints.Count)
+        if(index > player1.GetComponent<FollowThePath>().waypoints.Count || index < 0)
         {
             index = 0;
         }
